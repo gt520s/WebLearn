@@ -1,0 +1,72 @@
+@import "2.scss";
+$blue : blue;
+$padd_box : 5px 10px;
+$left : left;
+$box_border : 1px solid red;
+
+@mixin left($value,$max_mar,$radius:3px){
+  float:left;
+  margin-left:$value;
+  margin-bottom:$max_mar;
+  border-radius:$radius;
+}
+
+.nav_bar_r{
+  @include left(32px,23px)
+}
+.ee{
+  background:$blue;
+  height:20px + 12px;
+  display:inline-block;
+  padding:$padd_box;
+  border-#{$left}:$box_border;
+}
+#box{
+  border:$box_border;
+  font-size:21px;
+  p{
+    background:greenyellow;
+    border:{
+      color:green;
+      radius:3px;
+    };
+    a{
+      &:hover{color:aquamarine;};
+      @extend .ee;
+    }
+
+  }
+}
+
+.bb{
+  @extend .ee;
+  @include left(15px,12px)
+
+}
+.fol{
+  background:lighten(#cc3,50%);
+  color:$back;
+}
+
+@for $i from 1 to 10{
+  .border-#{$i}{
+    border:#{$i}px solid #333;
+  }
+}
+
+$j :6;
+@while $j > 0{
+  .item-#{$j}{
+    width:2em * $j;
+  }
+    $j : $j - 2;
+  }
+@each $member in a,b,c,d{
+  .#{$member}-item{
+    background-image:url("../image/#{$member}.jpg");
+  }
+}
+
+/*
+  liaho
+*/

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body>
+	<div class="abc"></div>
+	<div id="app">
+		<input type="checkbox" v-model="seen">
+		<p v-if="seen">
+			你看得见我了!
+		</p>
+		<pre>
+			<a v-bind:href="url">学习!</a>
+			<a v-bind:name="name_v">学习!</a>
+		</pre>
+		<span v-on:click="aler_11">sss</span>
+	</div>
+
+	<script>
+		new Vue({
+			el:'#app',
+			data:{
+				seen:false,
+				url:'http://www.baidu.com',
+				name_v:'asdas'
+			},
+			methods:{
+				aler_11 :function () {
+					console.log('2323');
+					var abc = document.querySelector('.abc');
+					abc.style.background = 'red';
+					abc.style.width = '200px';
+					abc.style.height= '200px';
+				}
+			}
+		})
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<script>
+	window.onload = function(){
+		init()
+
+
+
+	}
+
+	function init() {
+		var el_box = document.querySelector('#box');
+		el_box.classList.add('we');
+		var has_ww = el_box.classList.contains('we');
+		console.log(has_ww);
+		//获取下一个节点
+		var next_dom = el_box.nextElementSibling || el_box.nextSibling;
+		console.log(next_dom.innerHTML)
+	}
+</script>
+	<div id="box" class="tt">
+		hellow
+	</div>
+<p>8888</p>
+</body>
+</html>
