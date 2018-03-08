@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+
+</head>
+<body>
+	<div id="app">
+		<ul>
+			<li v-for="item in data_arr">
+				姓名:{{item.name}},<br>年龄: {{item.age}}
+			</li>
+		</ul>
+		<ol>
+			<li v-for="(v,k,index) in person">
+				{{k}}:{{v}}==>{{index}}
+			</li>
+		</ol>
+		<ul>
+			<li v-for="n in [12,32,4,564,67,7,8,9,67,5]">{{n}}</li>
+		</ul>
+	</div>
+
+	<script>
+		new Vue({
+			el:'#app',
+			data:{
+				data_arr:[
+					{name:'daidai',age:12},
+					{name:'chouchou',age:64},
+					{name:'dabin',age:15},
+					{name:'ds',age:12},
+					{name:'jason',age:32},
+					{name:'gtim',age:43},
+				],
+				person:{
+					name:'jason',
+					url:'www.baidu.com',
+					txt:'百度第三方是',
+					color:'red'
+				}
+			}
+		})
+	</script>
+
+</body>
+</html>
