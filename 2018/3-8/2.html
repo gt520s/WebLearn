@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<button class="control" @click="show_modules">点击!</button>
+		<p v-if="seen">可以看见我吗?</p>
+		<template v-if="ok">
+			<h1>这是个模块!</h1>
+			<p>一起出现和消失!</p>
+			<p>哈哈啊哈哈!</p>
+		</template>
+	</div>
+
+	<script>
+		new Vue({
+			el:"#app",
+			data:{
+				seen:true,
+				ok:true
+			},
+			methods:{
+				show_modules:function () {
+					if( this.ok == false ){
+						this.ok = true;
+					}else{
+						this.ok = false;
+					}
+
+				}
+			}
+
+		})
+
+	</script>
+</body>
+</html>
