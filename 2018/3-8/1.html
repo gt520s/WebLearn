@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <p>{{mes || pa}}</p>
+    <button @click="rever">点击</button>
+	  <a :href="url">111</a>
+  </div>
+
+  <script type="text/javascript">
+    new Vue({
+        el:'#app',
+        data:{
+        	pa:'1111111hello!',
+            mes: false,
+	        url:'www.baidu.com'
+        },
+        methods:{
+        	rever:function () {
+                console.log('输出结果!')
+			}
+        }
+    })
+  </script>
+</body>
+</html>
