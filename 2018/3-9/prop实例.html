@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="../src/vue.js"></script>
+
+</head>
+<body>
+	<div id="app">
+		<ol>
+			<too_item v-for="item in arr_data" v-bind:todo1="item"></too_item>
+			<blue v-for="ages_item in arr_blue" v-bind:jason="ages_item"></blue>
+		</ol>
+	</div>
+
+	<script>
+	    Vue.component('too_item',{
+	    	props:['todo1'],
+		    template:'<li>{{todo1.text}}</li>'
+	    });
+		Vue.component('blue',{
+			props:['jason'],
+			template:'<li>{{jason.age}}</li>'
+		})
+	    new Vue({
+		    el:'#app',
+		    data:{
+		    	arr_data:[
+				    {text:222},
+				    {text:'sdaf'},
+				    {text:22234534},
+				    {text:2342345},
+				    {text:'asdsgfggggg'},
+			    ],
+			    arr_blue:[
+				    {age:12},
+				    {age:64},
+				    {age:26},
+				    {age:23},
+				    {age:57}
+			    ]
+		    }
+	    })
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="../src/vue.js"></script>
+
+</head>
+<body>
+
+	<div id="app">
+		<runoob v-bind:mes="dd"></runoob>
+	</div>
+
+	<div id="go">
+		<go></go>
+	</div>
+
+	<script>
+		Vue.component('runoob',{
+			props:['mes'],
+			template:'<h1>{{mes}}</h1>'
+		})
+		new Vue({
+			el:"#app",
+			data:{
+				dd:'2222222222222'
+			}
+		})
+
+		var Go = {
+			template:'<h2>第一个局部组件</h2>'
+		}
+		new Vue({
+			el:"#go",
+			components:{
+				'go':Go
+			}
+		})
+
+	</script>
+
+</body>
+</html>
