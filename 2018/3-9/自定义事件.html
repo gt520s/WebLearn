@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="../src/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+	<p>页面加载自动获取焦点</p>
+	<input v-focus="">
+	<div class="bl" v-style="{color:'blue',txt:'888888'}"></div>
+
+</div>
+<script>
+    Vue.directive('focus',{
+    	//当帮绑定袁术插入发哦DOM中
+	    inserted:function (el) {
+		    el.focus()
+		}
+    });
+    new Vue({
+	    el:'#app',
+	    directives:{
+	    	style:function (el,data) {
+			    el.style.background = data.value.color;
+			    el.innerHTML = data.value.txt
+			}
+	    }
+    })
+</script>
+
+</body>
+</html>
