@@ -4,9 +4,42 @@
 	<meta charset="UTF-8">
 	<title>Title</title>
 	<script src="../src/vue.js"></script>
-
 </head>
 <body>
+	<div id="app">
+		<p>{{total}}</p>
+		<button1 v-on:add="addTotal"></button1>
+	</div>
 
+	<script>
+	    Vue.component('button1',{
+	    	template:'<button1 v-on:click="addhandle">{{counter}}</button1>',
+		    data:function () {
+			    return {
+			    	counter: 0
+			    }
+			},
+		    methods:{
+	    		addhandle:function () {
+				    this.counter += 1;
+				    this.$emit('add')
+				}
+		    }
+	    });
+
+
+		new Vue({
+			el:'#app',
+			data:{
+				total:0
+			},
+			methods:{
+				addTotal:function () {
+					this.total += 1
+				}
+			}
+		})
+
+	</script>
 </body>
 </html>
