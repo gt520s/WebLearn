@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="../src/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<button v-on:click="control += 1">增加</button>
+		<p>这个按钮增加了{{control}}</p>
+		<button v-on:click="greet">你好!</button>
+		<button v-on:click="say('hi')">你好!</button>
+		<input @keyup.left="say('222')">
+
+
+	</div>
+
+	<script>
+		var app = new Vue({
+			el:"#app",
+			data:{
+				control:0,
+				name:'Vue.js'
+			},
+			methods:{
+				greet:function (event) {
+					alert('hello' + this.name);
+					if( event ){
+					    alert( event.target.tagName )
+					}
+				},
+				say:function (mes) {
+					alert(mes)
+				}
+			}
+		});
+		// app.greet()
+
+
+	</script>
+
+</body>
+</html>
