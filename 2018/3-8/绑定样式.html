@@ -18,13 +18,19 @@
 		<div v-bind:class="classObj"></div>
 		<p v-bind:class="['was','das']">11</p>
 		<p v-bind:class="['hasError',isActive ? 'active':'kkk']">eqadasd</p>
+		<p v-bind:style="styleObj"></p>
 	</div>
 	<script>
 		new Vue({
 			el:'#app',
 			data:{
 				isActive:false,
-				hasError:true
+				hasError:true,
+				styleObj:{
+					width:'200px',
+					height:'200px',
+					background:'blue'
+				}
 			},
 			computed:{
 				classObj:function () {
