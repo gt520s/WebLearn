@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Title</title>
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+	<script src="../src/vue.js"></script>
 	<style>
 		.active{
 			width:199px;
@@ -15,13 +15,23 @@
 <body>
 	<div id="app">
 		<div v-bind:class="{active:isActive,textdanger:hasError}"></div>
+		<div v-bind:class="classObj"></div>
+		<p v-bind:class="['was','das']">11</p>
+		<p v-bind:class="['hasError',isActive ? 'active':'kkk']">eqadasd</p>
 	</div>
 	<script>
 		new Vue({
 			el:'#app',
 			data:{
-				isActive:true,
+				isActive:false,
 				hasError:true
+			},
+			computed:{
+				classObj:function () {
+					return {
+						active :this.isActive
+					}
+				}
 			}
 		})
 	</script>
