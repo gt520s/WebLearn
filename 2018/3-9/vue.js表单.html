@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="../src/vue.js"></script>
+
+</head>
+<body>
+	<div id="app">
+		<p>输入:</p>
+
+		<input type="raido" value="jaosn" v-model.lazy="message">
+		<input type="radio" value="太空" v-model="message">
+		<input type="radio" value="装备" v-model="message">
+		<p>消息{{message}}</p>
+	</div>
+	<div id="select">
+		<select name="fruit" v-model.lazy="selected">
+			<option value="">选择网站</option>
+			<option value="www.baidu.com">baidu</option>
+			<option value="www.google">谷歌</option>
+		</select>
+		<p>你选择的搜索引擎是: {{selected}}</p>
+	</div>
+	<div id="num">
+		<input type="text" v-model.number.trim="num">
+		<p>{{num}}</p>
+	</div>
+	<script>
+		new Vue({
+			el:"#app",
+			data:{
+				message:[]
+			}
+
+
+		})
+		new Vue({
+			el:"#select",
+			data:{
+				selected:''
+			}
+
+		})
+		new Vue({
+			el:'#num',
+			data:{
+				num:''
+			}
+		})
+	</script>
+</body>
+</html>
