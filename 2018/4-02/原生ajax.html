@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+    <button id="btn">按钮</button>
+    <script>
+        window.onload = ()=>{
+            var btn = document.getElementById('btn');
+            btn.onclick = ()=>{
+                //1.创建对象
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET","1.txt",false);
+                xhr.send();
+                xhr.onreadystatechange = ()=>{
+                    alert( xhr.readyState )
+                }
+
+
+                //2.连接服务器
+                //3.发送请求
+                //4.返回数据
+
+            }
+
+
+
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>

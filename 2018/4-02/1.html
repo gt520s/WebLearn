@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    //  ["33:43", "34:645", "4:76"]
+    var str = '33:43||34:645||4:76';
+    var reg = /(\d+\:\d+)/g;
+    var arr = [];
+    str.match(reg).forEach(function(v) {
+        arr.push(v.match(/\d+/g))
+    })
+
+    console.log(arr)
+</script>
+
+</body>
+</html>

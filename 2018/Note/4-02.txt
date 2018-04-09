@@ -1,0 +1,17 @@
+node 
+输出:
+exports.xx = xxx;
+module.exports = { x,x,x}
+引入:
+let xx = require('./a.js')
+
+ES6
+输出 
+export(x,x,x,x);
+
+引入
+import mod from "./xxx.js"
+
+
+cli --> 命令行工具命令
+

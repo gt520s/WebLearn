@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css" media="screen">
+		#box{
+			width: 200px;
+			height: 200px;
+			background: #ccc;
+			text-align: center;
+			line-height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+
+
+	<script>
+		window.onload = function(){
+			var box = document.getElementById('box');
+			box.addEventListener('dragenter', function(){
+				this.innerHTML = '释放鼠标'
+			}, false);
+			box.addEventListener('dragleave',function(){
+				this.innerHTML = '将文件拖拽到这里!'
+			});
+			box.addEventListener('drapover', function(){
+				console.log('drapover')	
+			}, false)
+
+		}
+
+
+	</script>
+</body>
+</html>

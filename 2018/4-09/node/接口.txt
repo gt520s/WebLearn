@@ -1,0 +1,18 @@
+接口:
+用户注册:
+ /reg?user=xxx&pass=xxx
+ {"code":0,"mes":"信息"}
+
+ 用户登陆:
+ /login?user=xxx&pass=xxx
+ {"code":0,"mes":信息}
+
+
+ 第一种请求: 请求文件
+ /1.html
+ /2.html
+
+ 第二种请求:请求接口
+ /reg?xxx
+ /login?xxx
+

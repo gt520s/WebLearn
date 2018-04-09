@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-2.0.3.js"></script>
+</head>
+<body>
+    用户名:
+    <input type="text" class="username">
+    <br>
+    密码:
+    <input type="text" class="pass">
+    <br>
+    <button id="btn">注册</button>
+    <script>
+        $(function () {
+            $('#btn').on('click',function () {
+                $.ajax({
+                    url:'./reg',
+                    dataType:'json',
+                    data:{
+                        user:$('.username').val(),
+                        pass:$('.pass').val()
+                    },
+                    success(res){
+                        if(res.code){
+                            alert('注册失败! '+res.msg)
+                        }else {
+                            alert('注册成功!')
+                        }
+                    },
+                    error(err){
+                        alert('注册失败,通讯失败!')
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+</html>

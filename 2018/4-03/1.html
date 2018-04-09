@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="http://localhost:8080/socket.io/socket.io.js"></script>
+	<script>
+		let sock = io.connect('ws://localhost:8080/')
+		document.onclick =function (){
+			sock.emit('aa',12,5)
+		}
+		sock.on('_random',(num)=>{
+			console.log(`接到了后台的数据:${num}`)
+		})
+	</script>
+</head>
+<body>
+
+</body>
+</html>
