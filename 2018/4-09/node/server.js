@@ -5,7 +5,6 @@
 const http = require('http');
 const fs = require('fs');
 const mysql = require('mysql');
-const io = require('socket.io');
 const url = require('url');
 
 //数据库
