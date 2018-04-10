@@ -6,6 +6,7 @@ const http = require('http');
 const fs = require('fs');
 const mysql = require('mysql');
 const url = require('url');
+const regs = require('./lib/regs')
 
 //数据库
 let db = mysql.createPool({
@@ -18,13 +19,14 @@ let db = mysql.createPool({
 //1.创建http服务器
 let server = http.createServer((req,res)=>{
 	let {pathname,query} = url.parse(req.url, true)
+	//注册接口
 	if( pathname == '/reg' ){
 		let {user,pass} = query;
 		//1.检验数据
-		if( ! /^\w{6,32}$/.test(user) ){
+		if( !regs.username.test(user) ){
 			res.write( JSON.stringify({code:1,msg:'用户名不规范'}) )
 			res.end()
-		}else if( !/^\w{6,18}$/.test(pass) ){
+		}else if( !regs.password.test(pass) ){
 			res.write( JSON.stringify({code:1,msg:'密码不规范'}) )
 			res.end()
 		}else {
@@ -54,6 +56,19 @@ let server = http.createServer((req,res)=>{
 		}
 
 	}else if( pathname == '/login' ){
+		//登陆接口
+		//1.验证信息
+        let {user,pass} = query;
+		if( !regs.username.test(user) ){
+			res.write( JSON.stringify({code:1,msg:"用户名不符合规范!"}) );
+			res.end();
+		}else if( !regs.password.test((pass)) ){
+            res.write( JSON.stringify({code:1,msg:"密码不符合规范!"}) );
+            res.end();
+		}else {
+			
+		}
+
 	}else {
 		//读取文件
 		fs.readFile(`www${req.url}`,(err,data)=>{
@@ -71,3 +86,14 @@ let server = http.createServer((req,res)=>{
 })
 server.listen(8080);
 console.log('服务器启动成功!')
+	/*
+	* 1.引入模块
+	* 2.连接数据库
+	* 3.创建服务器
+	*   3.1.监听客户端请求
+	*       3.1.1 接口请求
+	*       验证数据,处理数据
+	*       3.1.2 页面请求
+	*       返回数据
+	*
+	* */
