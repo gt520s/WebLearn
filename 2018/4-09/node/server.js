@@ -20,6 +20,7 @@ let db = mysql.createPool({
 let server = http.createServer((req,res)=>{
 	let {pathname,query} = url.parse(req.url, true)
 	//注册接口
+	console.log(pathname)
 	if( pathname == '/reg' ){
 		let {user,pass} = query;
 		//1.检验数据
@@ -66,7 +67,29 @@ let server = http.createServer((req,res)=>{
             res.write( JSON.stringify({code:1,msg:"密码不符合规范!"}) );
             res.end();
 		}else {
-			
+			db.query( `SELECT ID,password FROM user_table WHERE username='${user}'`,(err,data)=>{
+				if(err){
+                    res.write( JSON.stringify({code:1,msg:"数据库出错!"}) );
+                    res.end();
+				}else if( data.length == 0 ){
+                    res.write( JSON.stringify({code:1,msg:"用户名不存在!"}) );
+                    res.end();
+				}else if( data[0].password != pass ){
+                    res.write( JSON.stringify({code:1,msg:"用户名或密码错误!"}) );
+                    res.end();
+				}else{
+				    //设置用户状态
+                    db.query(`UPDATE user_table SET online=1 WHERE ID='${data[0].ID}'`,err =>{
+                          if( err ){
+                              res.write( JSON.stringify({code:1,msg:"服务器错误!"}) );
+                              res.end();
+                          }else {
+                              res.write( JSON.stringify({code:0,msg:"登陆成功!"}) );
+                              res.end();
+                          }
+                    })
+                }
+			})
 		}
 
 	}else {

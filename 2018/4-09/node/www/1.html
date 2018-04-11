@@ -13,6 +13,7 @@
     <input type="text" class="pass">
     <br>
     <button id="btn">注册</button>
+    <button id="btn2">登陆</button>
     <script>
         $(function () {
             $('#btn').on('click',function () {
@@ -31,7 +32,29 @@
                         }
                     },
                     error(err){
-                        alert('注册失败,通讯失败!')
+                        alert('注册失败,通讯错误!')
+                    }
+                })
+            })
+
+            //2.登陆
+            $('#btn2').on('click',function () {
+                $.ajax({
+                    url:'./login',
+                    dataType:'json',
+                    data:{
+                        user:$('.username').val(),
+                        pass:$('.pass').val()
+                    },
+                    success(res){
+                        if(res.code){
+                            alert('登陆失败! '+res.msg)
+                        }else {
+                            alert('登陆成功!')
+                        }
+                    },
+                    error(err){
+                        alert('通讯失败!')
                     }
                 })
             })
