@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <script src="http://localhost:8080/socket.io/socket.io.js"></script>
-    <title>Document</title>
+    <title>聊天室</title>
+    <style>
+        .msg_ul{
+            background:#f0f0f0;
+            padding:10px;
+        }
+        .msg_ul .mine{
+            color:green;
+        }
+    </style>
 </head>
 <body>
     用户名:
@@ -13,13 +22,24 @@
     <br>
     <button id="btn">注册</button>
     <button id="btn2">登陆</button>
+
+    <hr>
+    <textarea id="txt1" cols="60" rows="10"></textarea>
+    <button id="btn_send">发送</button>
+    <ul class="msg_ul">
+
+    </ul>
     <script>
         let sock = io.connect('ws://localhost:8080')
         window.onload = ()=>{
+            let cur_username = '';
             let username = document.getElementById('username');
             let pass = document.getElementById('pass');
             let btn = document.getElementById('btn');
             let btn2 = document.getElementById('btn2');
+            let btn_send = document.getElementById('btn_send');
+            let msg_ul = document.getElementsByClassName('msg_ul')[0];
+            let txt1 = document.getElementById('txt1');
             //注册事件
             sock.on('reg_ret',(code, msg)=>{
                 if( code ){
@@ -36,11 +56,33 @@
                 if( code ){
                     alert(`登陆失败, ${msg}`)
                 }else {
-                    alert('登陆成功!')
+                    alert('登陆成功!');
+                    cur_username = username.value;
                 }
             });
             btn2.onclick = ()=>{
                 sock.emit('login',username.value,pass.value);
+            }
+
+            //发送消息
+            sock.on('msg_ret',(code,msg)=>{
+                if( code ){
+                    alert('发送失败!')
+                }else {
+                    let oLi = document.createElement('li');
+                    oLi.className = 'mine';
+                    oLi.innerHTML = `<h4>${cur_username}</h4><p>${txt1.value}</p>`;
+                    msg_ul.appendChild(oLi);
+                    txt1.value = '';
+                }
+            })
+            sock.on('msg',(name,txt)=>{
+                let oLi = document.createElement('li');
+                oLi.innerHTML = `<h4>${name}</h4><p>${txt}</p>`;
+                msg_ul.appendChild(oLi);
+            });
+            btn_send.onclick = ()=>{
+                sock.emit('msg',txt1.value);
             }
         }
     </script>

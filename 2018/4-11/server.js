@@ -37,12 +37,14 @@ console.log('服务器已启动!')
 //3.创建websocket服务器
 /*
 * 接口
-* 'reg',user,pass => 'reg_ret',code,msg
+* 'reg',user,pass   => 'reg_ret',code,msg
 * 'login',user,pass => 'login_ret',code,msg
+* 'msg' txt         => 'msg_ret',code,msg
 * */
-
+let aSock = [];
 let wsServer = io.listen(server);
 wsServer.on('connection',sock=>{
+    aSock.push(sock);
     let cur_username = '';
     let cur_id = '';
     //注册接口
@@ -70,7 +72,7 @@ wsServer.on('connection',sock=>{
                 }
             })
         }
-    })
+    });
     //登陆接口
     sock.on('login',(user,pass)=>{
         //验证数据
@@ -113,7 +115,22 @@ wsServer.on('connection',sock=>{
                 console.log(`用户${cur_username}已经下线~`);
                 cur_username = '';
                 cur_id = '';
+                //去掉离线用户
+                aSock = aSock.filter(item=>item != sock);
             }
         })
+    });
+    //发送消息
+    sock.on('msg',txt=>{
+        //数据验证
+        if( !txt ){
+            sock.emit('msg_ret',1,'消息不能为空!')
+        }else{
+            aSock.forEach(item=>{
+                if( item == sock ) return;
+                item.emit('msg',cur_username,txt);
+            });
+            sock.emit('msg_ret',0,'发送成功!')
+        }
     })
 })
