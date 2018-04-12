@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://localhost:8080/socket.io/socket.io.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    用户名:
+    <input type="text" id="username">
+    <br> 密码:
+    <input type="text" id="pass">
+    <br>
+    <button id="btn">注册</button>
+    <button id="btn2">登陆</button>
+    <script>
+        let sock = io.connect('ws://localhost:8080')
+        window.onload = ()=>{
+            let username = document.getElementById('username');
+            let pass = document.getElementById('pass');
+            let btn = document.getElementById('btn');
+            let btn2 = document.getElementById('btn2');
+            //注册事件
+            sock.on('reg_ret',(code, msg)=>{
+                if( code ){
+                    alert(`注册失败, ${msg}`)
+                }else {
+                    alert('注册成功!')
+                }
+            });
+            btn.onclick = ()=>{
+                sock.emit('reg',username.value, pass.value);
+            }
+            //登陆事件
+            sock.on('login_ret',(code,msg)=>{
+                if( code ){
+                    alert(`登陆失败, ${msg}`)
+                }else {
+                    alert('登陆成功!')
+                }
+            });
+            btn2.onclick = ()=>{
+                sock.emit('login',username.value,pass.value);
+            }
+        }
+    </script>
+</body>
+</html>
