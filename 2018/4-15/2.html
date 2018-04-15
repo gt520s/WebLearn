@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+    <style>
+        .warp{ width:200px; height:200px; overflow:hidden;background:#ccc}
+        .content{ width:400px; height:800px;background:-webkit-linear-gradient(right top ,red,green)}
+    </style>
+    <script src="iscroll-probe.js"></script>
+</head>
+<body>
+    <div class="warp">
+        <div class="content"></div>
+    </div>
+<script>
+    window.onload = function () {
+        let iscroll = new IScroll('.warp',{
+            scrollX:true,
+            probeType:1
+        });
+        console.log(iscroll);
+        iscroll.on('beforeScrollStart',()=>{
+            console.log('beforeScrollStart事件')
+        });
+        iscroll.on('scrollCancel',()=>{
+            console.log('scrollCancel事件')
+        })
+        iscroll.on('scrollStart',()=>{
+            console.log('scrollStart事件')
+        })
+        iscroll.on('scrollEnd',()=>{
+            console.log('scrollEnd事件')
+        })
+        iscroll.on('flick',()=>{
+            console.log('flick event')
+        })
+        iscroll.on('scroll',()=>{
+            console.log('scroll event')
+        })
+    }
+</script>
+</body>
+
+</html>
