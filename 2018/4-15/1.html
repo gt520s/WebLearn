@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+    <style>
+        .box{
+            width:100px; height:100px;
+            position:absolute;
+        }
+        .b1{
+            background:#d9534f;
+            top:100px;
+            left:140px;
+        }
+        .b2{
+            background:#5bc0de;
+            top:300px;
+            left:200px;
+        }
+        .b3{
+            background:#337ab7;
+        }
+    </style>
+</head>
+<body>
+<div class="box b1"></div>
+<div class="box b2"></div>
+<div class="box b3"></div>
+</body>
+<script>
+    window.onload = function () {
+        let boxs = document.getElementsByClassName('box');
+        Array.from(boxs).forEach((item)=>{drap(item)});
+        function drap(dom) {
+           dom.addEventListener('touchstart',(ev)=>{
+               //获取点击时候的数据
+               let disX = ev.targetTouches[0].pageX - dom.offsetLeft;
+               let disY = ev.targetTouches[0].pageY - dom.offsetTop;
+               dom.addEventListener('touchmove',fn_move,false);
+               dom.addEventListener('touchend',fn_end,false);
+               function fn_move(ev) {
+                   dom.style.left = ev.targetTouches[0].pageX - disX + 'px';
+                   dom.style.top = ev.targetTouches[0].pageY - disY + 'px';
+                   ev.preventDefault();
+               }
+               function fn_end() {
+                   dom.removeEventListener('touchmove',fn_move,false);
+                   dom.removeEventListener('touchend',fn_end,false);
+               }
+           },false)
+
+
+        }
+    }
+</script>
+</html>
