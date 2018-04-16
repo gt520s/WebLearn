@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+    <script src="MyHammer.js"></script>
+    <style>
+        .box{
+            width:200px;
+            height:200px;
+            margin:50px auto;
+            background:#4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+<script>
+    function $(...args) {
+        return document.querySelectorAll(...args)
+    }
+    window.onload = function () {
+        let oBox = $('.box')[0];
+        let hammer = new MyHammer(oBox,{});
+        hammer.on('tap',()=>{
+
+        })
+
+
+    }
+</script>
+</body>
+
+</html>
