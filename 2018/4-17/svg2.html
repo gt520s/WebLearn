@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+    <button id="btn">按钮</button>
+    <svg width="600" height="600" id="svg1">
+
+    </svg>
+<script>
+    window.onload = function () {
+        let btn = document.getElementById('btn');
+        let svg1 = document.getElementById('svg1');
+        btn.onclick = function () {
+            let line = document.createElementNS('http://www.w3.org/2000/svg','line');
+            line.setAttribute('x1',200)
+            line.setAttribute('y1',200)
+            line.setAttribute('x2',600)
+            line.setAttribute('stroke','blue');
+            svg1.appendChild(line);
+        }
+
+
+    }
+</script>
+</body>
+
+</html>

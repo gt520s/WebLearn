@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+    <svg width="500" height="600">
+        <line x1="100" y1="200" x2="400" y2="300" style="stroke:red;stroke-width:20" id="line1"></line>
+    </svg>
+<script>
+    window.onload = function () {
+        let line = document.getElementById('line1');
+        line.onclick = ()=>{
+            line .style.stroke = 'blue';
+        }
+    }
+</script>
+</body>
+
+</html>
