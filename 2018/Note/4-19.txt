@@ -1,0 +1,36 @@
+渲染
+1.{{}}  转义输出(html标签显示出来)
+2.v-html 原样输出
+:title   属性
+@click   事件
+
+data       普通属性
+methods    普通方法
+计算数据     简单,可以缓存;同步操作
+    受到控制的访问 -- get/set
+监听        异步操作
+    当数据发生变化时候通知
+
+前端路由 vue-router
+1.用法;
+    渲染容器:<router-view></router-view>
+        *router里面的component会被渲染到里面
+    路由跳转: <router-link to="xxx">文字</router-link>
+2.js 操作路由
+    this.$router.go(-1);
+    this.$router.push('./user');
+3.路由参数
+    path:'/user/:id'
+    $route.params.id
+4.监听
+    1.watch    不推荐
+    2.beforeRouteUpdate(to,from,next){
+        next()
+    }
+
+总结:路由就是一个锚点(#xxx),根据锚点信息,确定要显示的组件
+
+路由对象
+    1.path:        匹配路由地址
+    2.component:
+

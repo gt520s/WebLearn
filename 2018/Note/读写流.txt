@@ -1,0 +1,20 @@
+流--任何连续的数据都叫做流: 文件流 网络流 音频流....
+1.好处:减少内存的占用,增强系统系能(利用率高)
+
+
+测试
+1.单元测试
+2.覆盖率测试
+
+
+优化webpack
+	1.app.xxx.js
+		按需加载
+		打包在一起
+		import xxx from XXX
+		components:{xxx}
+		
+		按需加载:
+		components:{
+			xxx: import(xxx)
+		}

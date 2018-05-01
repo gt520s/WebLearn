@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+    <script src="raphael.js"></script>
+</head>
+<body>
+
+<script>
+    window.onload = function () {
+       let page = Raphael(0,0,800,600);
+       let rect = page.rect(100,100,300,400,10);
+       rect.attr('fill','#ccc');
+       rect.click(function () {
+           this.attr('fill','skyblue')
+
+       })
+    }
+</script>
+</body>
+
+</html>

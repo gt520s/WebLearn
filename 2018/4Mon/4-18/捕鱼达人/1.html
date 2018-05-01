@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+    <style>
+        body{background:#000;text-align:center;}
+        #c1{background:url("img/game_bg_2_hd.jpg") no-repeat}
+    </style>
+</head>
+<body>
+    <canvas id="c1" width="800" height="600"></canvas>
+<script>
+    //加载图片
+    function loadImgs(json,fn) {
+        let res = {};
+        let complete = 0;
+        let total = 0;
+        for(let name in json){
+            total++;
+            let oImg = new Image();
+            res[name] = oImg;
+            oImg.onload = function () {
+                complete++;
+                if( complete == total ){
+                    fn(res);
+                }
+            };
+            oImg.onerror = function () {
+                console.log('图片加载失败~')
+            }
+            oImg.src = json[name];
+        }
+    }
+
+    window.onload = function () {
+        let oC = document.getElementById('c1');
+        let gd = oC.getContext('2d');
+
+
+        loadImgs({
+            fish1:'img/fish1.png',
+            coin1:'img/coinAni1.png'
+        },function (imgs) {
+            console.log('加载完成!')
+            console.log(imgs);
+            gd.drawImage(
+                imgs.fish1,
+                0,0,55,37,
+                300,250,55,37
+            )
+        })
+
+
+
+    }
+</script>
+</body>
+
+</html>

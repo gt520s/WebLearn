@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            height:1600px;
+        }
+        .box{
+            width:200px;
+            height:200px;
+            background:#ccc;
+            position:absolute;
+            top:0; left:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        window.onload = function () {
+            var box = document.getElementsByClassName('box')[0];
+            box.addEventListener('touchstart',function (ev) {
+                //存入初始的距离
+                let disX = ev.targetTouches[0].pageX - box.offsetLeft;
+                let disY = ev.targetTouches[0].pageY - box.offsetTop;
+                ev.preventDefault()
+                ev.cancelBubble = true;
+                function fn_move(ev) {
+                    box.style.left = ev.targetTouches[0].pageX - disX + 'px';
+                    box.style.top = ev.targetTouches[0].pageY - disY + 'px';
+                };
+                function fn_end() {
+                    box.removeEventListener('touchmove',fn_move,false);
+                    box.removeEventListener('touchend',fn_end,false);
+                };
+                box.addEventListener('touchmove',fn_move,false);
+                box.addEventListener('touchend',fn_end,false);
+            },false)
+        }
+    </script>
+</body>
+</html>

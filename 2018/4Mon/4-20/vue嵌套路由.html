@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+    <script src="../4-18/vue.js"></script>
+    <script src="../4-18/vue-router.js"></script>
+</head>
+<body>
+
+<script>
+    window.onload = function () {
+        //1.声明路由
+        let r1 = new VueRouter({
+            routes:[
+                {
+                    path:'/user',
+                    components:{
+                        default:{template:'<div>用户</div>'},
+                        a:{template:'<div>产品</div>'},
+                        b:{template:'<div>留言</div>'},
+                    }
+                }
+
+            ]
+        });
+
+        //2.调用路由
+        let vm = new Vue({
+            el: "#box",
+            router: r1
+        })
+    }
+</script>
+</body>
+<div id="box">
+    <router-view></router-view>
+    <router-view name="a"></router-view>
+    <router-view name="b"></router-view>
+</div>
+</html>

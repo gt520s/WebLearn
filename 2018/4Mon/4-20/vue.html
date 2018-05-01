@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+    <script src="../4-18/vue.js"></script>
+    <script src="../4-18/vue-router.js"></script>
+</head>
+<body>
+
+<script>
+    window.onload = function () {
+        //1.声明路由
+        let r1 = new VueRouter({
+            routes:[
+                {path:'/user/:id',component:{template:'<div>用户当前ID:{{$route.params.id}}</div>'}},
+
+            ]
+        });
+
+        //2.调用路由
+        let vm = new Vue({
+            el: "#box",
+            router: r1
+        })
+    }
+</script>
+</body>
+<div id="box">
+
+    <router-link to="/user/2354356">用户</router-link>
+    <router-link to="/user/6658213">用户</router-link>
+    <router-link to="/user/345345">用户</router-link>
+    <router-link to="/user/223445">用户</router-link>
+
+    <router-view></router-view>
+</div>
+</html>

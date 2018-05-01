@@ -1,0 +1,17 @@
+{
+  "name": "jason",
+  "homepage": "https://github.com/gt520s/WebLearn",
+  "authors": [
+    "Jason <gt520s@163.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

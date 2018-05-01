@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="box" :title="a" v-cloak>
+    {{a}}
+    <button  @click="fn">点我</button>
+    <table width="100%" border="1" style="text-align:center">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="item in arr">
+                <td>{{item.name}}</td>
+                <td>{{item.age}}</td>
+                <td>{{item.sex}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    window.onload = function () {
+        let vm = new Vue({
+            el:"#box",
+            data:{
+                a:12,
+                b:5,
+                c:8,
+                arr:[
+                    {name:'jason',age:23,sex:'男'},
+                    {name:'杜莎',age:23,sex:'女'},
+                    {name:'大斌',age:43,sex:'女'},
+                ]
+            },
+            methods:{
+                fn(){
+                    console.log(this.a)
+                    this.a++;
+                }
+            }
+        });
+
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+    <script src="../4-18/vue.js"></script>
+    <script src="../4-18/vue-router.js"></script>
+</head>
+<body>
+
+<script>
+    window.onload = function () {
+       //1.声明路由
+        let r1 = new VueRouter({
+            routes:[
+                {path:'/user',component:{template:'<div>用户列表</div>'}},
+                {path:'/article',component:{template:'<div>文章列表</div>'}},
+                {path:'/comment',component:{template:'<div>评论列表</div>'}},
+            ]
+        });
+
+        //2.调用路由
+        let vm = new Vue({
+            el:"#box",
+            router:r1,
+            methods:{
+                fn_forward(){
+                    this.$router.go(1);
+                },
+                fn_back(){
+                    this.$router.go(-1);
+                },
+                fn_push(){
+                    this.$router.push('/article')
+
+            }
+        })
+    }
+</script>
+</body>
+<div id="box">
+    <input type="button" value="☜后退" @click="fn_back">
+    <input type="button" value="前进☞" @click="fn_forward">
+    <input type="button" value="文章按钮" @click="fn_push">
+    <br>
+    <router-link to="/user">用户</router-link>
+    <router-link to="/article">文章</router-link>
+    <router-link to="/comment">评论</router-link>
+    <router-view></router-view>
+</div>
+</html>

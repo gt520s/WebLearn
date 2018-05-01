@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+    <script src="../4-18/vue.js"></script>
+</head>
+<body>
+<div id="box">
+    <gt-user></gt-user>
+</div>
+<script>
+    window.onload = function () {
+        Vue.component('gt-user',{template:'<div>这是第一个组件!</div>'});
+        let vm = new Vue({
+            el:"#box"
+        })
+    }
+</script>
+</body>
+
+</html>

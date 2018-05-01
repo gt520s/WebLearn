@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var json = {a:23,b:344,c:3}
+
+    //克隆数据
+
+    var _old_json = {};
+    for( var name in json ){
+        _old_json[name] = json[name];
+    }
+
+    //数据修改
+    json.a = 99999;
+    json.cc = 'hello';
+    delete json['b']
+
+    //数据监测变化
+
+    for( var name in _old_json ){
+        if( !json[name] ){
+            console.log('删除了'+ name)
+        }else if( _old_json[name] != json[name] ){
+            console.log('修改了'+name +',之前的值为:'+_old_json[name]+',修改后的值为:'+json[name] )
+        }
+    }
+
+    for( var name in json ){
+        if( !_old_json[name] ){
+            console.log('新增了'+json[name])
+        }
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let json = {a:12};
+    let p =new Proxy(json, {
+        get(target){
+            console.log(target)
+        },
+        set(target,key,val){
+            if( 0<=val && 100>=val ){
+                target[key] = val
+            }else {
+                throw new Error('输入值只能在0~100之间!')
+            }
+        }
+    })
+    p.a=12
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+    <script src="iscroll-probe.js"></script>
+    <style>
+        .warp{ width:200px; height:200px; overflow:hidden;background:#ccc;position:relative}
+        .content{ width:400px; height:800px;background:-webkit-linear-gradient(right top ,red,green);position:absolute; top:0; left:0; z-index:2;color:#f0f0f0;padding-top:10px;}
+        .down_scroll{
+            position:absolute;
+            top:0; left:0;
+            z-index:1;
+            width:100%;
+            text-align:center;
+            line-height:30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="warp">
+        <div class="content">
+            内容!
+        </div>
+        <div class="down_scroll">
+            下拉刷新~
+        </div>
+    </div>
+<script>
+    window.onload = function () {
+        let oWarp = document.getElementsByClassName('warp')[0];
+        let down_scroll = document.getElementsByClassName('down_scroll')[0];
+        let iScroll = new IScroll(oWarp,{
+            scrollX:true,
+            probeType:3
+        });
+        console.log(iScroll.options)
+        let first = false;
+        iScroll.on('beforeScrollStart',()=>{
+        })
+
+        iScroll.on('scroll',()=>{
+            if(iScroll.y > 30 ){
+                down_scroll.innerHTML = '松开刷新~'
+            }else if( iScroll.y < 30 ){
+                down_scroll.innerHTML = '下拉刷新~'
+            };
+            if( iScroll.endTime != 0 && first ){
+                console.log('松手了~');
+                first = false;
+            }
+        });
+        iScroll.on('scrollStart',()=>{
+            iScroll.endTime = 0;
+            first = true;
+    
+        })
+        iScroll.on('scrollEnd',()=>{
+
+        })
+
+
+    }
+</script>
+</body>
+
+</html>
