@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    class PerSon1{
+        constructor(name,age){
+            this.name = name;
+            this.age = age;
+        }
+        showAge(){
+            alert(this.age)
+        }
+        showName(){
+            alert(this.name)
+        }
+    }
+//==========================================================
+    function PerSon(name,age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    PerSon.prototype.showAge = function () {
+        alert(this.age)
+    }
+    PerSon.prototype.showName = function () {
+        alert(this.name)
+    }
+
+    //继承============
+    function VipPerson(name,age,level) {
+        PerSon.call(this,name, age);
+        this.level = level;
+    }
+
+    VipPerson.prototype = new PerSon();
+    VipPerson.prototype.constructor = VipPerson;
+
+    VipPerson.prototype.showLevel = function () {
+        alert(this.level);
+    }
+
+    let vip1 = new VipPerson('jason',25,'188级');
+    vip1.showLevel();
+
+</script>
+</body>
+</html>

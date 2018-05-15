@@ -1,0 +1,82 @@
+{
+  "items": [
+    {
+      "restaurant": {
+        "address": "郴州市城东王仙岭北麓湘南学院湘京食堂三楼",
+        "authentic_id": 4332826162437229,
+        "bidding": "",
+        "description": "我们只做最正宗成都味！",
+        "distance": 289,
+        "favored": false,
+        "flavors": [
+          {
+            "id": 221,
+            "name": "川湘菜"
+          },
+          {
+            "id": 237,
+            "name": "地方小吃"
+          }
+        ],
+        "float_delivery_fee": 1,
+        "float_minimum_order_amount": 12,
+        "has_story": false,
+        "id": 150887329,
+        "image_path": "afafc22c73ade7b2e06302801f5a08f3png",
+        "is_new": false,
+        "is_premium": false,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 25.784618,
+        "longitude": 113.10188,
+        "max_applied_quantity_per_order": -1,
+        "name": "四川火锅冒菜",
+        "next_business_time": "",
+        "only_use_poi": false,
+        "opening_hours": [
+          "09:25/24:00"
+        ],
+        "order_lead_time": 47,
+        "phone": "17381199133 17373572780",
+        "piecewise_agent_fee": {
+          "description": "配送费¥1",
+          "extra_fee": 0,
+          "is_extra": false,
+          "rules": [
+            {
+              "fee": 1,
+              "price": 12
+            }
+          ],
+          "tips": "配送费¥1"
+        },
+        "platform": 0,
+        "promotion_info": "",
+        "rating": 4.7,
+        "rating_count": 0,
+        "recent_order_num": 1865,
+        "recommend": {
+          "image_hash": "731111f3f9379e772eedf4855beae8a1jpeg",
+          "is_ad": true,
+          "reason": "广告",
+          "track": "{\"rankType\":\"8\"}"
+        },
+        "recommend_reasons": [
+          {
+            "name": "回头客多"
+          }
+        ],
+        "regular_customer_count": 0,
+        "scheme": "eleme://catering?restaurant_id=150887329",
+        "status": 1,
+        "support_tags": [],
+        "supports": [],
+        "type": 0
+      }
+    }
+
+  ],
+  "meta": {
+    "rank_id": ""
+  }
+}

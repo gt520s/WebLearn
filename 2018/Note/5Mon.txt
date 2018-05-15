@@ -1,0 +1,30 @@
+webpack
+1.安装
+    > cnpm i webpack -D
+2.webpack项目打包
+    webpack src文件 dist文件
+3.配置webpack.config.js
+
+----------------------------
+devDependencies         开发依赖:开发环境下用,不需要打包到生产环境下(最终的结果文件)
+dependencies            生产依赖: 需要被打包到生产环境下
+
+默认:用到哪个就打包哪个
+
+
+---------------------------
+打包css文件
+1.安装loader
+    style-loader css-loader
+2.配置webpack
+    module:{
+        rules:[
+            tets:/正则/,
+            use:['loader名'...]
+        ]
+    }
+3.监听
+webpack --watch
+*只是自动编译,不能自动同步
+webpack-dev-server
+*只能自动同步,不能自动编译

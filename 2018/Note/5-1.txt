@@ -1,0 +1,9 @@
+vue 原理
+1.数据改变
+
+observr            ×
+Proxy              √
+1.get              获取
+2.set              设置
+3.deleteProerty    删除属性
+4.has              in操作

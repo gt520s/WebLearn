@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+
+
+<script>
+    let p = new Promise(function (resolve, reject) {
+        //异步代码
+        //resolve --成功了
+        //reject  --失败了
+        $.ajax({
+            url:'arr.txt',
+            dataType:'json',
+            success(arr){
+                resolve(arr);
+            },
+            error(err){
+                reject(err)
+            }
+        })
+
+    });
+    p.then(function (arr) {
+        alert('成功!'+arr);
+    },function () {
+        alert('失败!')
+    })
+
+
+
+</script>
+</body>
+</html>

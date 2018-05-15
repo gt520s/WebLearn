@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    class PerSon{
+        constructor(name,age){
+            this.name = name;
+            this.age = age;
+        }
+        showAge(){
+            alert(this.age)
+        }
+        showName(){
+            alert(this.name)
+        }
+    }
+    //继承es6================
+
+    class VipPerSon extends PerSon{
+        constructor(name,age,level){
+            super(name, age) //超类 --执行超类的构造函数\
+            this.level = level;
+        }
+
+        showLevel(){
+            alert(this.level)
+        }
+    }
+
+    let vip1 = new VipPerSon('dusha',23,'122级!');
+
+
+    class HVIP extends VipPerSon{
+        constructor(name,age,level,flag){
+            super(name,age,level);
+            this.flag = flag
+        }
+        showFlag(){
+            alert('这是皇冠VIP');
+        }
+    }
+
+    let HV1 = new HVIP('皇冠',23,'满级啦','我是皇冠!')
+    HV1.showFlag();
+</script>
+</body>
+</html>
