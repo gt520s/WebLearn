@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="box"></div>
+<script>
+    let Profile = Vue.extend({
+        template:'<p>{{first}} {{lastname}}</p>',
+        data () {
+            return {
+                first:'哈哈,',
+                lastname: '8888'
+            }
+        }
+    });
+    //穿件Profile 文件
+    new Profile().$mount('#box')
+
+
+</script>
+
+</body>
+</html>

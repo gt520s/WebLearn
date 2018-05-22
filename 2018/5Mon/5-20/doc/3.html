@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+    <div id="app">
+       <ol>
+           <tool v-for="item in arr" :data_a="item"></tool>
+       </ol>
+       <ul>
+           <beat v-for="item in beat_" :beat_data='item'></beat>
+       </ul>
+    </div>
+    <script>
+          Vue.component('tool',{
+            props: ['data_a'],
+            template: '<li>{{data_a}}</li>'
+        })
+
+           Vue.component('beat',{
+            props: ['beat_data'],
+            template: '<li>{{beat_data.text}}</li>'
+        })
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                arr:[22321,65,6,345345,756756,879,312365,32],
+                beat_: [
+                    {text:'哈哈'},
+                    {text:'放得开'},
+                    {text:'不过哈'},
+                    {text:'地方的'}
+                ]
+
+            }
+        })
+
+      
+
+        
+    </script>
+
+</body>
+</html>

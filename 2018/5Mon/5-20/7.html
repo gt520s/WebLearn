@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="vue.js"></script>
+    <script src="vue-router.min.js"></script>
+</head>
+<body>
+    <div id="box">
+        <router-link to="/user">用户</router-link>
+        <router-link to="/news">新闻</router-link>
+        <router-view></router-view>
+    </div>
+<script>
+
+    let r1 = new VueRouter({
+        routes: [
+            {
+                path:'/user',
+                component:{template:'<div>这是用户列表页面</div>'}
+            },
+            {
+                path:'/news',
+                component:{template:'<div>这是新闻列表页面~~~~~~</div>'}
+            }
+        ]
+    });
+
+    let vm = new Vue({
+        el:'#box',
+        router:r1
+    })
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="vue.js"></script>
+</head>
+<body>
+  <div id="box">
+    <input type="text" v-model='a'>
+  </div>
+  <script>
+    let vm = new Vue({
+      el:'#box',
+      data:{
+        a:0
+      },
+      watch:{
+        a (val,oldVal) {
+          console.log(`a从${oldVal}变成了${val}`);
+        }
+      }
+    })
+
+  </script>
+</body>
+</html>

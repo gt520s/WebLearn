@@ -1,0 +1,1102 @@
+{
+    "items": [
+        {
+            "restaurant": {
+                "activities": [
+                    {
+                        "attribute": "9.0",
+                        "description": "新用户下单立减9元",
+                        "icon_color": "70bc46",
+                        "icon_name": "首",
+                        "id": 1065304969,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "新用户补贴",
+                        "tips": "新用户下单立减9元",
+                        "type": 103
+                    },
+                    {
+                        "attribute": "{\"40\": {\"1\": 10.0, \"0\": 0}, \"22\": {\"1\": 5.0, \"0\": 0}, \"15\": {\"1\": 1.0, \"0\": 0}}",
+                        "description": "满15减1，满22减5，满40减10",
+                        "icon_color": "f07373",
+                        "icon_name": "减",
+                        "id": 889115273,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "自营销复杂满减活动",
+                        "tips": "满15减1，满22减5，满40减10",
+                        "type": 102
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326912994,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326912362,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326912002,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326911538,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326911074,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326910778,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326910322,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326909298,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326908858,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326908474,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326907858,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326907178,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326906490,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326906018,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326905290,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326904386,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326903810,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326903306,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326902650,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326902122,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326901306,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326900786,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326900186,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326899666,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326898754,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326898074,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326843170,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326837274,
+                        "name": "折",
+                        "tips": "折"
+                    },
+                    {
+                        "description": "折",
+                        "icon_color": "f07373",
+                        "icon_name": "特",
+                        "id": 326836154,
+                        "name": "折",
+                        "tips": "折"
+                    }
+                ],
+                "address": "湖南省郴州市苏仙区王仙岭上白水6组",
+                "authentic_id": 6352980999755149,
+                "bidding": "{\"core\":{\"index\":24,\"extraInfo\":\"{\\\"bidding\\\":\\\"{}\\\",\\\"rankId\\\":\\\"ec17e289173743c89950fadea96b457e\\\",\\\"rankTime\\\":\\\"1526562026\\\",\\\"cityId\\\":\\\"178\\\"}\",\"target\":{\"restaurantId\":1364149,\"weight\":20,\"probability\":0.03269999846816063},\"come_from\":0,\"next\":{\"restaurantId\":157512432,\"weight\":20,\"probability\":0.031039999797940254}}}",
+                "description": "",
+                "distance": 818,
+                "favored": false,
+                "flavors": [
+                    {
+                        "id": 234,
+                        "name": "炸鸡炸串"
+                    },
+                    {
+                        "id": 212,
+                        "name": "汉堡"
+                    }
+                ],
+                "float_delivery_fee": 0,
+                "float_minimum_order_amount": 10,
+                "has_story": false,
+                "id": 1364149,
+                "image_path": "338b6beca7b0b8e5005d89ae12d4e71fjpeg",
+                "is_new": false,
+                "is_premium": false,
+                "is_stock_empty": 0,
+                "is_valid": 1,
+                "latitude": 25.782989,
+                "longitude": 113.096327,
+                "max_applied_quantity_per_order": -1,
+                "name": "麦旺炸鸡汉堡（后街店）",
+                "next_business_time": "",
+                "only_use_poi": false,
+                "opening_hours": [
+                    "10:00/02:00"
+                ],
+                "order_lead_time": 36,
+                "phone": "15211788851",
+                "piecewise_agent_fee": {
+                    "description": "免配送费",
+                    "extra_fee": 0,
+                    "is_extra": false,
+                    "rules": [
+                        {
+                            "fee": 0,
+                            "price": 10
+                        }
+                    ],
+                    "tips": "免配送费"
+                },
+                "platform": 0,
+                "posters": [],
+                "promotion_info": "",
+                "rating": 4.8,
+                "rating_count": 0,
+                "recent_order_num": 689,
+                "recommend": {
+                    "image_hash": "731111f3f9379e772eedf4855beae8a1jpeg",
+                    "is_ad": true,
+                    "reason": "广告",
+                    "track": "{\"rankType\":\"8\"}"
+                },
+                "recommend_reasons": [
+                    {
+                        "name": "回头客多"
+                    }
+                ],
+                "regular_customer_count": 0,
+                "scheme": "eleme://catering?restaurant_id=1364149",
+                "status": 1,
+                "support_tags": [],
+                "supports": [],
+                "type": 0
+            }
+        },
+        {
+            "restaurant": {
+                "activities": [
+                    {
+                        "attribute": "9.0",
+                        "description": "新用户下单立减9元",
+                        "icon_color": "70bc46",
+                        "icon_name": "首",
+                        "id": 1065268985,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "新用户补贴",
+                        "tips": "新用户下单立减9元",
+                        "type": 103
+                    },
+                    {
+                        "attribute": "{\"50\": {\"1\": 5.0, \"0\": 0}, \"60\": {\"1\": 6.0, \"0\": 0}}",
+                        "description": "满50减5，满60减6",
+                        "icon_color": "f07373",
+                        "icon_name": "减",
+                        "id": 1090592881,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "epl",
+                        "tips": "满50减5，满60减6",
+                        "type": 102
+                    }
+                ],
+                "address": "湖南省郴州市苏仙区王仙岭街道上白水村八组",
+                "authentic_id": 5362981005193771,
+                "description": "",
+                "distance": 472,
+                "favored": false,
+                "flavors": [
+                    {
+                        "id": 234,
+                        "name": "炸鸡炸串"
+                    },
+                    {
+                        "id": 213,
+                        "name": "米粉面馆"
+                    }
+                ],
+                "float_delivery_fee": 1,
+                "float_minimum_order_amount": 12,
+                "has_story": false,
+                "id": 151695171,
+                "image_path": "201f8f8cabf0004c8dfebf588c3fcf8djpeg",
+                "is_new": false,
+                "is_premium": false,
+                "is_stock_empty": 0,
+                "is_valid": 1,
+                "latitude": 25.786214,
+                "longitude": 113.099013,
+                "max_applied_quantity_per_order": -1,
+                "name": "重庆酸辣粉(湘南市场店)",
+                "next_business_time": "",
+                "only_use_poi": false,
+                "opening_hours": [
+                    "10:00/24:00"
+                ],
+                "order_lead_time": 45,
+                "phone": "18153855151",
+                "piecewise_agent_fee": {
+                    "description": "配送费¥1",
+                    "extra_fee": 0,
+                    "is_extra": false,
+                    "rules": [
+                        {
+                            "fee": 1,
+                            "price": 12
+                        }
+                    ],
+                    "tips": "配送费¥1"
+                },
+                "platform": 0,
+                "posters": [],
+                "promotion_info": "",
+                "rating": 3.7,
+                "rating_count": 0,
+                "recent_order_num": 353,
+                "recommend": {
+                    "is_ad": false,
+                    "reason": ""
+                },
+                "recommend_reasons": [],
+                "regular_customer_count": 0,
+                "scheme": "eleme://catering?restaurant_id=151695171",
+                "status": 1,
+                "support_tags": [],
+                "supports": [],
+                "type": 0
+            }
+        },
+        {
+            "restaurant": {
+                "activities": [
+                    {
+                        "attribute": "9.0",
+                        "description": "新用户下单立减9元",
+                        "icon_color": "70bc46",
+                        "icon_name": "首",
+                        "id": 1065322577,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "新用户补贴",
+                        "tips": "新用户下单立减9元",
+                        "type": 103
+                    },
+                    {
+                        "attribute": "{\"32\": {\"1\": 5.0, \"0\": 0}, \"10\": {\"1\": 1.0, \"0\": 0}, \"20\": {\"1\": 2.0, \"0\": 0}, \"42\": {\"1\": 6.0, \"0\": 0}}",
+                        "description": "满10减1，满20减2，满32减5，满42减6",
+                        "icon_color": "f07373",
+                        "icon_name": "减",
+                        "id": 1101583738,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "饺子",
+                        "tips": "满10减1，满20减2，满32减5，满42减6",
+                        "type": 102
+                    }
+                ],
+                "address": "郴州市苏仙区王仙岭街道上白水八组",
+                "authentic_id": 6312960997790801,
+                "description": "。。。。",
+                "distance": 341,
+                "favored": false,
+                "flavors": [
+                    {
+                        "id": 217,
+                        "name": "饺子馄饨"
+                    }
+                ],
+                "float_delivery_fee": 0,
+                "float_minimum_order_amount": 10,
+                "has_story": false,
+                "id": 711901,
+                "image_path": "76ed4efad19e9a602e19055e9958fa7ajpeg",
+                "is_new": false,
+                "is_premium": false,
+                "is_stock_empty": 0,
+                "is_valid": 1,
+                "latitude": 25.785802,
+                "longitude": 113.103935,
+                "max_applied_quantity_per_order": -1,
+                "name": "饺子侠",
+                "next_business_time": "",
+                "only_use_poi": false,
+                "opening_hours": [
+                    "07:00/22:00"
+                ],
+                "order_lead_time": 38,
+                "phone": "15980609818 18673457301",
+                "piecewise_agent_fee": {
+                    "description": "免配送费",
+                    "extra_fee": 0,
+                    "is_extra": false,
+                    "rules": [
+                        {
+                            "fee": 0,
+                            "price": 10
+                        }
+                    ],
+                    "tips": "免配送费"
+                },
+                "platform": 0,
+                "posters": [],
+                "promotion_info": "。。。。",
+                "rating": 4.7,
+                "rating_count": 0,
+                "recent_order_num": 1868,
+                "recommend": {
+                    "is_ad": false,
+                    "reason": ""
+                },
+                "recommend_reasons": [
+                    {
+                        "name": "回头客多"
+                    }
+                ],
+                "regular_customer_count": 0,
+                "scheme": "eleme://catering?restaurant_id=711901",
+                "status": 1,
+                "support_tags": [],
+                "supports": [],
+                "type": 0
+            }
+        },
+        {
+            "restaurant": {
+                "activities": [
+                    {
+                        "attribute": "{\"40\": {\"1\": 4.0, \"0\": 0}, \"50\": {\"1\": 5.0, \"0\": 0}, \"20\": {\"1\": 2.0, \"0\": 0}, \"30\": {\"1\": 3.0, \"0\": 0}}",
+                        "description": "满20减2，满30减3，满40减4，满50减5",
+                        "icon_color": "f07373",
+                        "icon_name": "减",
+                        "id": 1116464657,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "自营销复杂满减活动",
+                        "tips": "满20减2，满30减3，满40减4，满50减5",
+                        "type": 102
+                    },
+                    {
+                        "description": "517饿货节-5.17元",
+                        "icon_color": "f1884f",
+                        "icon_name": "特",
+                        "id": 377117233,
+                        "name": "517饿货节-5.17元",
+                        "tips": "517饿货节-5.17元"
+                    }
+                ],
+                "address": "郴州市苏仙区观山洞街道湘南学院",
+                "authentic_id": 3352900991274425,
+                "description": "",
+                "distance": 794,
+                "favored": false,
+                "flavors": [
+                    {
+                        "id": 221,
+                        "name": "川湘菜"
+                    }
+                ],
+                "float_delivery_fee": 0,
+                "float_minimum_order_amount": 0,
+                "has_story": false,
+                "id": 161945125,
+                "image_path": "f86947e4af97f7e0a0ff349dd32785c1jpeg",
+                "is_new": false,
+                "is_premium": false,
+                "is_stock_empty": 0,
+                "is_valid": 1,
+                "latitude": 25.78755,
+                "longitude": 113.106516,
+                "max_applied_quantity_per_order": -1,
+                "name": "大碗饭(新世纪店)",
+                "next_business_time": "",
+                "only_use_poi": false,
+                "opening_hours": [
+                    "09:00/23:00"
+                ],
+                "order_lead_time": 39,
+                "phone": "18573744358",
+                "piecewise_agent_fee": {
+                    "description": "免配送费",
+                    "extra_fee": 0,
+                    "is_extra": false,
+                    "rules": [
+                        {
+                            "fee": 0,
+                            "price": 0
+                        }
+                    ],
+                    "tips": "免配送费"
+                },
+                "platform": 0,
+                "posters": [],
+                "promotion_info": "大碗饭的传统饭菜是不分开的，如要分开请拍餐具，饭菜喜好请备注，在不影响口味的情况下我们尽量满足您的要求，如有什么不满意我们立刻整改，我们很重视每一条不满意的评价，也很珍惜每一条好评，非常感谢每一位顾客，我们不忘初心，使命必达。",
+                "rating": 4.4,
+                "rating_count": 0,
+                "recent_order_num": 2553,
+                "recommend": {
+                    "is_ad": false,
+                    "reason": ""
+                },
+                "recommend_reasons": [],
+                "regular_customer_count": 0,
+                "scheme": "eleme://catering?restaurant_id=161945125",
+                "status": 1,
+                "support_tags": [],
+                "supports": [
+                    {
+                        "description": "该商户食品安全已由中国太平洋保险承保，食品安全有保障",
+                        "icon_color": "999999",
+                        "icon_name": "保",
+                        "id": 7,
+                        "name": "食安保",
+                        "two_characters_icon_name": "保险"
+                    }
+                ],
+                "type": 0
+            }
+        },
+        {
+            "restaurant": {
+                "activities": [
+                    {
+                        "attribute": "9.0",
+                        "description": "新用户下单立减9元",
+                        "icon_color": "70bc46",
+                        "icon_name": "首",
+                        "id": 1065227961,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "新用户补贴",
+                        "tips": "新用户下单立减9元",
+                        "type": 103
+                    },
+                    {
+                        "attribute": "{\"80\": {\"1\": 8.0, \"0\": 0}, \"50\": {\"1\": 5.0, \"0\": 0}, \"20\": {\"1\": 2.0, \"0\": 0}, \"30\": {\"1\": 3.0, \"0\": 0}}",
+                        "description": "满20减2，满30减3，满50减5，满80减8",
+                        "icon_color": "f07373",
+                        "icon_name": "减",
+                        "id": 904834409,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "自营销复杂满减活动",
+                        "tips": "满20减2，满30减3，满50减5，满80减8",
+                        "type": 102
+                    },
+                    {
+                        "description": "超值换购",
+                        "icon_color": "f1884f",
+                        "icon_name": "换",
+                        "id": 380301985,
+                        "name": "超值换购",
+                        "tips": "超值换购"
+                    },
+                    {
+                        "description": "折折折",
+                        "icon_color": "f1884f",
+                        "icon_name": "特",
+                        "id": 369864202,
+                        "name": "折折折",
+                        "tips": "折折折"
+                    },
+                    {
+                        "description": "活动套餐",
+                        "icon_color": "f1884f",
+                        "icon_name": "特",
+                        "id": 369850602,
+                        "name": "活动套餐",
+                        "tips": "活动套餐"
+                    },
+                    {
+                        "description": "新品折",
+                        "icon_color": "f1884f",
+                        "icon_name": "特",
+                        "id": 368585954,
+                        "name": "新品折",
+                        "tips": "新品折"
+                    },
+                    {
+                        "description": "干就完了",
+                        "icon_color": "f1884f",
+                        "icon_name": "特",
+                        "id": 347918090,
+                        "name": "干就完了",
+                        "tips": "干就完了"
+                    },
+                    {
+                        "description": "打折就完了",
+                        "icon_color": "f1884f",
+                        "icon_name": "特",
+                        "id": 347916386,
+                        "name": "打折就完了",
+                        "tips": "打折就完了"
+                    }
+                ],
+                "address": "湖南省郴州市苏仙区王仙岭街道上白水村六组",
+                "authentic_id": 2392931002049632,
+                "delivery_mode": {
+                    "border": "",
+                    "color": "2395FF",
+                    "gradient": {
+                        "rgb_from": "00AAFF",
+                        "rgb_to": "0085FF"
+                    },
+                    "icon_hash": "b9b45d2f6ff0dbeef3a78ef0e4e90abapng",
+                    "id": 1,
+                    "is_solid": true,
+                    "text": "蜂鸟专送",
+                    "text_color": "FFFFFF"
+                },
+                "description": "宸宇炸鸡欢迎你的光临！本店所有炸鸡采用韩国进口工艺，进口酱料，口感正中，吃我们家的炸鸡，才叫吃过炸鸡！",
+                "distance": 902,
+                "favored": false,
+                "flavors": [
+                    {
+                        "id": 234,
+                        "name": "炸鸡炸串"
+                    },
+                    {
+                        "id": 221,
+                        "name": "川湘菜"
+                    }
+                ],
+                "float_delivery_fee": 2,
+                "float_minimum_order_amount": 10,
+                "has_story": false,
+                "id": 157512432,
+                "image_path": "4227d7dcc3022083643dc03b51eabe79jpeg",
+                "is_new": false,
+                "is_premium": false,
+                "is_stock_empty": 0,
+                "is_valid": 1,
+                "latitude": 25.782553,
+                "longitude": 113.095867,
+                "max_applied_quantity_per_order": -1,
+                "name": "宸宇炸鸡club",
+                "next_business_time": "",
+                "only_use_poi": false,
+                "opening_hours": [
+                    "10:30/02:00"
+                ],
+                "order_lead_time": 38,
+                "phone": "13007353444",
+                "piecewise_agent_fee": {
+                    "description": "配送费¥2",
+                    "extra_fee": 0,
+                    "is_extra": false,
+                    "rules": [
+                        {
+                            "fee": 2,
+                            "price": 10
+                        }
+                    ],
+                    "tips": "配送费¥2"
+                },
+                "platform": 0,
+                "posters": [],
+                "promotion_info": "",
+                "rating": 4.7,
+                "rating_count": 0,
+                "recent_order_num": 464,
+                "recommend": {
+                    "color": "#e8470b",
+                    "image_hash": "ac124c767ffa7fd296d3e2d6f01798c6png",
+                    "is_ad": false,
+                    "reason": "口碑人气好店"
+                },
+                "recommend_reasons": [],
+                "regular_customer_count": 0,
+                "scheme": "eleme://catering?restaurant_id=157512432",
+                "status": 1,
+                "support_tags": [],
+                "supports": [
+                    {
+                        "description": "该商户食品安全已由中国太平洋保险承保，食品安全有保障",
+                        "icon_color": "999999",
+                        "icon_name": "保",
+                        "id": 7,
+                        "name": "食安保",
+                        "two_characters_icon_name": "保险"
+                    }
+                ],
+                "type": 0
+            }
+        },
+        {
+            "restaurant": {
+                "activities": [],
+                "address": "湖南省郴州市苏仙区王仙岭街道上白水村八组",
+                "authentic_id": 2342900989285920,
+                "description": "",
+                "distance": 686,
+                "favored": false,
+                "flavors": [
+                    {
+                        "id": 218,
+                        "name": "烧烤"
+                    },
+                    {
+                        "id": 231,
+                        "name": "火锅烤鱼"
+                    }
+                ],
+                "float_delivery_fee": 1,
+                "float_minimum_order_amount": 20,
+                "has_story": false,
+                "id": 161590620,
+                "image_path": "c25d0106ecb74eedd5df04a00b619bcbjpeg",
+                "is_new": false,
+                "is_premium": false,
+                "is_stock_empty": 0,
+                "is_valid": 1,
+                "latitude": 25.785656,
+                "longitude": 113.097122,
+                "max_applied_quantity_per_order": -1,
+                "name": "食为先烧烤烤鱼",
+                "next_business_time": "",
+                "only_use_poi": false,
+                "opening_hours": [
+                    "11:00/04:00"
+                ],
+                "order_lead_time": 44,
+                "phone": "13786516908 13873502656",
+                "piecewise_agent_fee": {
+                    "description": "配送费¥1",
+                    "extra_fee": 0,
+                    "is_extra": false,
+                    "rules": [
+                        {
+                            "fee": 1,
+                            "price": 20
+                        }
+                    ],
+                    "tips": "配送费¥1"
+                },
+                "platform": 0,
+                "posters": [],
+                "promotion_info": "本店外卖采用锡纸打包，可吃上热呼呼的烧烤。欢迎光临！",
+                "rating": 4.9,
+                "rating_count": 0,
+                "recent_order_num": 128,
+                "recommend": {
+                    "is_ad": false,
+                    "reason": ""
+                },
+                "recommend_reasons": [],
+                "regular_customer_count": 0,
+                "scheme": "eleme://catering?restaurant_id=161590620",
+                "status": 1,
+                "support_tags": [],
+                "supports": [],
+                "type": 0
+            }
+        },
+        {
+            "restaurant": {
+                "activities": [
+                    {
+                        "attribute": "9.0",
+                        "description": "新用户下单立减9元",
+                        "icon_color": "70bc46",
+                        "icon_name": "首",
+                        "id": 1065230209,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "新用户补贴",
+                        "tips": "新用户下单立减9元",
+                        "type": 103
+                    },
+                    {
+                        "description": "517饿货节-5.17元",
+                        "icon_color": "f1884f",
+                        "icon_name": "特",
+                        "id": 377117233,
+                        "name": "517饿货节-5.17元",
+                        "tips": "517饿货节-5.17元"
+                    }
+                ],
+                "address": "郴州市苏仙区观山洞街道下白水五组",
+                "authentic_id": 6362910987688830,
+                "description": "Miss Milk酸奶吧坚持采用新鲜奶源以及有益菌，坚持每天巴士杀菌每天新鲜发酵，全过程严格品控，不含任何添加剂，在保留益生菌较大活性的同时保持了酸奶原始的口味！此外在选择水果等配料时，也均选用新鲜安心的优质食材！",
+                "distance": 693,
+                "favored": false,
+                "flavors": [
+                    {
+                        "id": 240,
+                        "name": "奶茶果汁"
+                    },
+                    {
+                        "id": 218,
+                        "name": "烧烤"
+                    }
+                ],
+                "float_delivery_fee": 0,
+                "float_minimum_order_amount": 10,
+                "has_story": false,
+                "id": 157425730,
+                "image_path": "2b3a90d16ea9244a9514c18d74a97318jpeg",
+                "is_new": false,
+                "is_premium": false,
+                "is_stock_empty": 0,
+                "is_valid": 1,
+                "latitude": 25.788455,
+                "longitude": 113.104389,
+                "max_applied_quantity_per_order": -1,
+                "name": "酸奶吧（烧烤酸奶）",
+                "next_business_time": "",
+                "only_use_poi": false,
+                "opening_hours": [
+                    "12:00/01:30"
+                ],
+                "order_lead_time": 38,
+                "phone": "17674180203 15673510046 13517352485",
+                "piecewise_agent_fee": {
+                    "description": "免配送费",
+                    "extra_fee": 0,
+                    "is_extra": false,
+                    "rules": [
+                        {
+                            "fee": 0,
+                            "price": 10
+                        }
+                    ],
+                    "tips": "免配送费"
+                },
+                "platform": 0,
+                "posters": [],
+                "promotion_info": "好消息 好消息 好消息 Miss milk酸奶吧经过技术更新 酸奶可以加热喝了（青春提醒：加热后的酸奶必须2小时内饮用）",
+                "rating": 4.1,
+                "rating_count": 0,
+                "recent_order_num": 693,
+                "recommend": {
+                    "color": "#e8470b",
+                    "image_hash": "ac124c767ffa7fd296d3e2d6f01798c6png",
+                    "is_ad": false,
+                    "reason": "口碑人气好店"
+                },
+                "recommend_reasons": [],
+                "regular_customer_count": 0,
+                "scheme": "eleme://catering?restaurant_id=157425730",
+                "status": 1,
+                "support_tags": [],
+                "supports": [],
+                "type": 0
+            }
+        },
+        {
+            "restaurant": {
+                "activities": [
+                    {
+                        "attribute": "9.0",
+                        "description": "新用户下单立减9元",
+                        "icon_color": "70bc46",
+                        "icon_name": "首",
+                        "id": 1065211321,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "新用户补贴",
+                        "tips": "新用户下单立减9元",
+                        "type": 103
+                    },
+                    {
+                        "attribute": "{\"40\": {\"1\": 3.0, \"0\": 0}, \"25\": {\"1\": 2.0, \"0\": 0}, \"15\": {\"1\": 1.0, \"0\": 0}}",
+                        "description": "满15减1，满25减2，满40减3",
+                        "icon_color": "f07373",
+                        "icon_name": "减",
+                        "id": 1114460793,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "自营销复杂满减活动",
+                        "tips": "满15减1，满25减2，满40减3",
+                        "type": 102
+                    },
+                    {
+                        "description": "单品定价",
+                        "icon_color": "f1884f",
+                        "icon_name": "特",
+                        "id": 1115285017,
+                        "name": "单品定价",
+                        "tips": "单品定价"
+                    },
+                    {
+                        "description": "单品定价",
+                        "icon_color": "f1884f",
+                        "icon_name": "特",
+                        "id": 1115285025,
+                        "name": "单品定价",
+                        "tips": "单品定价"
+                    },
+                    {
+                        "description": "单品定价",
+                        "icon_color": "f1884f",
+                        "icon_name": "特",
+                        "id": 1045270657,
+                        "name": "单品定价",
+                        "tips": "单品定价"
+                    },
+                    {
+                        "description": "单品定价",
+                        "icon_color": "f1884f",
+                        "icon_name": "特",
+                        "id": 1045270665,
+                        "name": "单品定价",
+                        "tips": "单品定价"
+                    },
+                    {
+                        "description": "单品定价",
+                        "icon_color": "f1884f",
+                        "icon_name": "特",
+                        "id": 1045270673,
+                        "name": "单品定价",
+                        "tips": "单品定价"
+                    },
+                    {
+                        "description": "单品定价",
+                        "icon_color": "f1884f",
+                        "icon_name": "特",
+                        "id": 1045270681,
+                        "name": "单品定价",
+                        "tips": "单品定价"
+                    },
+                    {
+                        "attribute": "{\"10.0\": {\"quantity\": 1, \"must_pay_online\": 1, \"name\": \"\\u5230\\u5e97\\u6d88\\u8d3910\\u5143\\u4ee3\\u91d1\\u5238\"}}",
+                        "description": "满10元赠送到店消费10元代金券1份",
+                        "icon_color": "3cc791",
+                        "icon_name": "赠",
+                        "id": 369546578,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "满赠",
+                        "tips": "满10元赠送到店消费10元代金券1份",
+                        "type": 106
+                    },
+                    {
+                        "description": "进店领3元代金券",
+                        "icon_color": "ffac2a",
+                        "icon_name": "领",
+                        "id": -1,
+                        "name": "到店领代金券",
+                        "tips": "进店领3元代金券"
+                    }
+                ],
+                "address": "湖南省郴州市苏仙区王仙岭街道上白水社区八组",
+                "authentic_id": 4312941001142087,
+                "description": "六年级二班教室主题砂锅串串店，正宗成都口味，特别受年轻朋友的欢迎！店内熟客居多，并且大部分客人都是慕名而来，店内的鸳鸯砂锅串串更是湘南学院的网红锅，客人尝过直接朋友圈刷屏！湘南学院对面第三排第四个店面",
+                "distance": 1694,
+                "favored": false,
+                "flavors": [
+                    {
+                        "id": 221,
+                        "name": "川湘菜"
+                    },
+                    {
+                        "id": 214,
+                        "name": "麻辣烫"
+                    }
+                ],
+                "float_delivery_fee": 1,
+                "float_minimum_order_amount": 15,
+                "has_story": false,
+                "id": 159574287,
+                "image_path": "84c00911fb66c2efe352b1692e37b6f0jpeg",
+                "is_new": false,
+                "is_premium": false,
+                "is_stock_empty": 0,
+                "is_valid": 1,
+                "latitude": 25.783584,
+                "longitude": 113.089843,
+                "max_applied_quantity_per_order": -1,
+                "name": "六年级2班砂锅串串",
+                "next_business_time": "",
+                "only_use_poi": false,
+                "opening_hours": [
+                    "00:00/03:00",
+                    "11:30/23:55"
+                ],
+                "order_lead_time": 38,
+                "phone": "17358823515",
+                "piecewise_agent_fee": {
+                    "description": "配送费¥1",
+                    "extra_fee": 0,
+                    "is_extra": false,
+                    "rules": [
+                        {
+                            "fee": 1,
+                            "price": 15
+                        }
+                    ],
+                    "tips": "配送费¥1"
+                },
+                "platform": 0,
+                "posters": [],
+                "promotion_info": "用餐高峰期请提前下单！提前下单！谢谢！来自四川成都砂锅串串香，地地道道火锅味，吃过的口有留香。",
+                "rating": 4.6,
+                "rating_count": 0,
+                "recent_order_num": 352,
+                "recommend": {
+                    "color": "#e8470b",
+                    "image_hash": "ac124c767ffa7fd296d3e2d6f01798c6png",
+                    "is_ad": false,
+                    "reason": "口碑人气好店"
+                },
+                "recommend_reasons": [],
+                "regular_customer_count": 0,
+                "scheme": "eleme://catering?restaurant_id=159574287",
+                "status": 1,
+                "support_tags": [],
+                "supports": [],
+                "type": 0
+            }
+        }
+    ],
+    "meta": {
+        "rank_id": "ec17e289173743c89950fadea96b457e"
+    }
+}

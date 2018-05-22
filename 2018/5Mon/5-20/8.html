@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <script src="vue.js"></script>
+    <script src="vue-router.min.js"></script>
+    <style>
+        *{ font-family: '微软雅黑'}
+        a{
+
+            display: inline-block;
+            padding: 5px 8px;
+            background: #ccc;
+            color: blue;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .router-link-active{
+            background: #000;color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <router-link to="/user">用户</router-link>
+        <router-link to="/news">新闻</router-link>
+        <router-view></router-view>
+    </div>
+    <script>
+        let r1 = new VueRouter({
+            routes: [
+                 {
+                      path: '/user',
+                      component:{template:`<div>
+                        <h3>这是用户列表页面</h3>
+                        <router-link to="/user/pass">修改密码</router-link>
+                        <router-link to="/user/ico">修改头像</router-link>
+                         <router-view></router-view>
+                        </div>`},
+                      children :[
+                            {
+                                path:'ico',
+                                component:{template:'<div>这是用户列表页面---修改头像</div>'}
+                            },
+                            {
+                                path:'pass',
+                                component:{template:'<div>这是用户列表页面---修改密码</div>'}
+                            }
+                      ]
+                 },
+                 {
+                    path: '/news',
+                    component: {
+                        template: `<div>
+                            <h3>新闻列表页面</h3>
+                            <router-link to="/news/frist1">新闻1</router-link>
+                            <router-link to="/news/sec">新闻2</router-link>
+                            <router-link to="/news/three">新闻3</router-link>
+                            <router-view></router-view>
+                        </div>`
+                    },
+                    children :[
+                            {
+                                path:'frist1',
+                                component: {
+                                    template: `<div>
+                                        <p>这是一个新闻1~</p>
+                                    </div>`
+                                }
+                            },
+                            {
+                                path:'three',
+                                component: {
+                                    template: `<div>
+                                        <p>这是一个新闻3哟~~</p>
+                                    </div>`
+                                }
+                            },
+                            {
+                                path:'sec',
+                                component: {
+                                    template: `<div>
+                                        <p>这是一个新闻2啊~~</p>
+                                    </div>`
+                                }
+                            }
+                        ]
+                 }
+            ]
+        });
+
+        let vm = new Vue({
+            el: '#box',
+            router: r1
+        })
+
+    </script>
+</body>
+</html>

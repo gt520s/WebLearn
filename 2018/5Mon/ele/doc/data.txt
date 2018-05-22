@@ -1,0 +1,852 @@
+{
+    "items": [
+        {
+            "restaurant": {
+                "activities": [
+                    {
+                        "attribute": "9.0",
+                        "description": "新用户下单立减9元",
+                        "icon_color": "70bc46",
+                        "icon_name": "首",
+                        "id": 1105914145,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "新用户补贴",
+                        "tips": "新用户下单立减9元",
+                        "type": 103
+                    },
+                    {
+                        "attribute": "{\"35\":{\"1\":10.0, \"0\":0}, \"20\":{\"1\":8.0, \"0\":0}, \"45\":{\"1\":15.0, \"0\":0}}",
+                        "description": "满20减8，满35减10，满45减15",
+                        "icon_color": "f07373",
+                        "icon_name": "减",
+                        "id": 1108290385,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "新店",
+                        "tips": "满20减8，满35减10，满45减15",
+                        "type": 102
+                    }
+                ],
+                "address": "湖南省郴州市苏仙区观山洞街道下白水村湘南学院教工住宅区1期5栋107",
+                "authentic_id": 5362980948449005,
+                "description": "",
+                "distance": 375,
+                "favored": false,
+                "flavors": [
+                    {
+                        "id": 221,
+                        "name": "川湘菜"
+                    },
+                    {
+                        "id": 237,
+                        "name": "地方小吃"
+                    }
+                ],
+                "float_delivery_fee": 1,
+                "float_minimum_order_amount": 10,
+                "has_story": false,
+                "id": 162978205,
+                "image_path": "94414461385b1369e2400f1dcf106299jpeg",
+                "is_new": true,
+                "is_premium": false,
+                "is_stock_empty": 0,
+                "is_valid": 1,
+                "latitude": 25.782849,
+                "longitude": 113.100059,
+                "max_applied_quantity_per_order": -1,
+                "name": "醋姑娘生态泡菜馆",
+                "next_business_time": "",
+                "only_use_poi": false,
+                "opening_hours": [
+                    "10:00/20:20"
+                ],
+                "order_lead_time": 0,
+                "phone": "18189880003",
+                "piecewise_agent_fee": {
+                    "description": "配送费¥1",
+                    "extra_fee": 0,
+                    "is_extra": false,
+                    "rules": [
+                        {
+                            "fee": 1,
+                            "price": 10
+                        }
+                    ],
+                    "tips": "配送费¥1"
+                },
+                "platform": 0,
+                "posters": [],
+                "promotion_info": "",
+                "rating": 5,
+                "rating_count": 0,
+                "recent_order_num": 38,
+                "recommend": {
+                    "is_ad": false,
+                    "reason": ""
+                },
+                "recommend_reasons": [
+                    {
+                        "name": "配送飞快"
+                    }
+                ],
+                "regular_customer_count": 0,
+                "scheme": "eleme://catering?restaurant_id=162978205",
+                "status": 1,
+                "support_tags": [],
+                "supports": [],
+                "type": 0
+            }
+        },
+        {
+            "restaurant": {
+                "activities": [
+                    {
+                        "attribute": "9.0",
+                        "description": "新用户下单立减9元",
+                        "icon_color": "70bc46",
+                        "icon_name": "首",
+                        "id": 1065227985,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "新用户补贴",
+                        "tips": "新用户下单立减9元",
+                        "type": 103
+                    },
+                    {
+                        "attribute": "{\"2\":{\"1\":1.0, \"0\":0}, \"28\":{\"1\":4.0, \"0\":0}, \"38\":{\"1\":5.0, \"0\":0}, \"15\":{\"1\":3.0, \"0\":0}}",
+                        "description": "满2减1，满15减3，满28减4，满38减5",
+                        "icon_color": "f07373",
+                        "icon_name": "减",
+                        "id": 1089918761,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "自营销复杂满减活动",
+                        "tips": "满2减1，满15减3，满28减4，满38减5",
+                        "type": 102
+                    }
+                ],
+                "address": "湖南省郴州市苏仙区王仙岭街道上白水村六组",
+                "authentic_id": 1362990948041067,
+                "bidding": "{\"core\":{\"index\":9,\"extraInfo\":\"{\\\"bidding\\\":\\\"{}\\\",\\\"rankId\\\":\\\"ec17e289173743c89950fadea96b457e\\\",\\\"rankTime\\\":\\\"1526551793\\\",\\\"cityId\\\":\\\"178\\\"}\",\"target\":{\"restaurantId\":157512367,\"weight\":30,\"probability\":0.03373999893665314},\"come_from\":0,\"next\":{\"restaurantId\":150118572,\"weight\":30,\"probability\":0.028960000723600388}}}",
+                "description": "",
+                "distance": 933,
+                "favored": false,
+                "flavors": [
+                    {
+                        "id": 221,
+                        "name": "川湘菜"
+                    },
+                    {
+                        "id": 209,
+                        "name": "盖浇饭"
+                    }
+                ],
+                "float_delivery_fee": 0,
+                "float_minimum_order_amount": 10,
+                "has_story": false,
+                "id": 157512367,
+                "image_path": "87257b165c9f95403d02f3e73264f66fjpeg",
+                "is_new": false,
+                "is_premium": false,
+                "is_stock_empty": 0,
+                "is_valid": 1,
+                "latitude": 25.782509,
+                "longitude": 113.095647,
+                "max_applied_quantity_per_order": -1,
+                "name": "北谷稻卤肉饭",
+                "next_business_time": "",
+                "only_use_poi": false,
+                "opening_hours": [
+                    "10:30/21:00"
+                ],
+                "order_lead_time": 39,
+                "phone": "17358821572",
+                "piecewise_agent_fee": {
+                    "description": "免配送费",
+                    "extra_fee": 0,
+                    "is_extra": false,
+                    "rules": [
+                        {
+                            "fee": 0,
+                            "price": 10
+                        }
+                    ],
+                    "tips": "免配送费"
+                },
+                "platform": 0,
+                "posters": [],
+                "promotion_info": "有任何餐品、配送、顺带其他物品等一切，请给我们联系及时17358821572。",
+                "rating": 3.8,
+                "rating_count": 0,
+                "recent_order_num": 1162,
+                "recommend": {
+                    "image_hash": "731111f3f9379e772eedf4855beae8a1jpeg",
+                    "is_ad": true,
+                    "reason": "广告",
+                    "track": "{\"rankType\":\"8\"}"
+                },
+                "recommend_reasons": [],
+                "regular_customer_count": 0,
+                "scheme": "eleme://catering?restaurant_id=157512367",
+                "status": 1,
+                "support_tags": [],
+                "supports": [
+                    {
+                        "description": "该商户食品安全已由中国太平洋保险承保，食品安全有保障",
+                        "icon_color": "999999",
+                        "icon_name": "保",
+                        "id": 7,
+                        "name": "食安保",
+                        "two_characters_icon_name": "保险"
+                    }
+                ],
+                "type": 0
+            }
+        },
+        {
+            "restaurant": {
+                "activities": [],
+                "address": "湖南省郴州市苏仙区观山洞街道下白水村五组",
+                "authentic_id": 3362980945519227,
+                "description": "",
+                "distance": 550,
+                "favored": false,
+                "flavors": [
+                    {
+                        "id": 218,
+                        "name": "烧烤"
+                    }
+                ],
+                "float_delivery_fee": 1,
+                "float_minimum_order_amount": 25,
+                "has_story": false,
+                "id": 151677427,
+                "image_path": "b3537b1a48df95a8ddb3307d4c782901jpeg",
+                "is_new": false,
+                "is_premium": false,
+                "is_stock_empty": 0,
+                "is_valid": 1,
+                "latitude": 25.787917,
+                "longitude": 113.1033,
+                "max_applied_quantity_per_order": -1,
+                "name": "候记特色烧烤店",
+                "next_business_time": "",
+                "only_use_poi": false,
+                "opening_hours": [
+                    "17:30/02:00"
+                ],
+                "order_lead_time": 38,
+                "phone": "13087251902",
+                "piecewise_agent_fee": {
+                    "description": "配送费¥1",
+                    "extra_fee": 0,
+                    "is_extra": false,
+                    "rules": [
+                        {
+                            "fee": 1,
+                            "price": 25
+                        }
+                    ],
+                    "tips": "配送费¥1"
+                },
+                "platform": 0,
+                "posters": [],
+                "promotion_info": "",
+                "rating": 4.8,
+                "rating_count": 0,
+                "recent_order_num": 294,
+                "recommend": {
+                    "is_ad": false,
+                    "reason": ""
+                },
+                "recommend_reasons": [],
+                "regular_customer_count": 0,
+                "scheme": "eleme://catering?restaurant_id=151677427",
+                "status": 1,
+                "support_tags": [],
+                "supports": [],
+                "type": 0
+            }
+        },
+        {
+            "restaurant": {
+                "activities": [
+                    {
+                        "attribute": "9.0",
+                        "description": "新用户下单立减9元",
+                        "icon_color": "70bc46",
+                        "icon_name": "首",
+                        "id": 1065227561,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "新用户补贴",
+                        "tips": "新用户下单立减9元",
+                        "type": 103
+                    },
+                    {
+                        "attribute": "{\"48\":{\"1\":5.0, \"0\":0}, \"28\":{\"1\":3.0, \"0\":0}, \"13\":{\"1\":1.0, \"0\":0}}",
+                        "description": "满13减1，满28减3，满48减5",
+                        "icon_color": "f07373",
+                        "icon_name": "减",
+                        "id": 1066310121,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "自营销复杂满减活动",
+                        "tips": "满13减1，满28减3，满48减5",
+                        "type": 102
+                    }
+                ],
+                "address": "湖南省郴州市苏仙区存在的湘南学院学生公寓C栋5号门面档口",
+                "authentic_id": 1332960945837819,
+                "description": "",
+                "distance": 415,
+                "favored": false,
+                "flavors": [
+                    {
+                        "id": 221,
+                        "name": "川湘菜"
+                    },
+                    {
+                        "id": 265,
+                        "name": "简餐"
+                    }
+                ],
+                "float_delivery_fee": 0,
+                "float_minimum_order_amount": 0,
+                "has_story": false,
+                "id": 157633619,
+                "image_path": "21e708dca3aa96703284180cf71faa5ejpeg",
+                "is_new": false,
+                "is_premium": false,
+                "is_stock_empty": 0,
+                "is_valid": 1,
+                "latitude": 25.785317,
+                "longitude": 113.104744,
+                "max_applied_quantity_per_order": -1,
+                "name": "邻家小厨",
+                "next_business_time": "",
+                "only_use_poi": false,
+                "opening_hours": [
+                    "09:45/22:00"
+                ],
+                "order_lead_time": 37,
+                "phone": "17674134189 15873265828",
+                "piecewise_agent_fee": {
+                    "description": "免配送费",
+                    "extra_fee": 0,
+                    "is_extra": false,
+                    "rules": [
+                        {
+                            "fee": 0,
+                            "price": 0
+                        }
+                    ],
+                    "tips": "免配送费"
+                },
+                "platform": 0,
+                "posters": [],
+                "promotion_info": "如果觉得还满意，就请点收藏，点收藏，点收藏，才不会迷路哦。。。",
+                "rating": 4.7,
+                "rating_count": 0,
+                "recent_order_num": 2835,
+                "recommend": {
+                    "is_ad": false,
+                    "reason": ""
+                },
+                "recommend_reasons": [
+                    {
+                        "name": "味道超赞"
+                    },
+                    {
+                        "name": "回头客多"
+                    }
+                ],
+                "regular_customer_count": 0,
+                "scheme": "eleme://catering?restaurant_id=157633619",
+                "status": 1,
+                "support_tags": [],
+                "supports": [],
+                "type": 0
+            }
+        },
+        {
+            "restaurant": {
+                "activities": [
+                    {
+                        "attribute": "9.0",
+                        "description": "新用户下单立减9元",
+                        "icon_color": "70bc46",
+                        "icon_name": "首",
+                        "id": 1065299649,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "新用户补贴",
+                        "tips": "新用户下单立减9元",
+                        "type": 103
+                    },
+                    {
+                        "attribute": "{\"25\":{\"1\":1.0, \"0\":0}, \"50\":{\"1\":2.0, \"0\":0}, \"100\":{\"1\":5.0, \"0\":0}}",
+                        "description": "满25减1，满50减2，满100减5",
+                        "icon_color": "f07373",
+                        "icon_name": "减",
+                        "id": 1082615297,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "自营销复杂满减活动",
+                        "tips": "满25减1，满50减2，满100减5",
+                        "type": 102
+                    }
+                ],
+                "address": "湖南省郴州市苏仙区王仙岭街道上白水8组",
+                "authentic_id": 4342990947058039,
+                "description": "",
+                "distance": 484,
+                "favored": false,
+                "flavors": [
+                    {
+                        "id": 234,
+                        "name": "炸鸡炸串"
+                    },
+                    {
+                        "id": 218,
+                        "name": "烧烤"
+                    }
+                ],
+                "float_delivery_fee": 1,
+                "float_minimum_order_amount": 12,
+                "has_story": false,
+                "id": 1515539,
+                "image_path": "7192baaee0ab0e954c520b1d12677575jpeg",
+                "is_new": false,
+                "is_premium": true,
+                "is_stock_empty": 0,
+                "is_valid": 1,
+                "latitude": 25.786287,
+                "longitude": 113.09896,
+                "max_applied_quantity_per_order": -1,
+                "name": "正新鸡排(湘南学院店)",
+                "next_business_time": "",
+                "only_use_poi": false,
+                "opening_hours": [
+                    "10:05/02:00"
+                ],
+                "order_lead_time": 38,
+                "phone": "18175568989 13341355252",
+                "piecewise_agent_fee": {
+                    "description": "配送费¥1",
+                    "extra_fee": 0,
+                    "is_extra": false,
+                    "rules": [
+                        {
+                            "fee": 1,
+                            "price": 12
+                        }
+                    ],
+                    "tips": "配送费¥1"
+                },
+                "platform": 0,
+                "posters": [],
+                "promotion_info": "湘南学院店欢迎您的光临！24小时服务热线18175568989！13341355252",
+                "rating": 4.9,
+                "rating_count": 0,
+                "recent_order_num": 1502,
+                "recommend": {
+                    "is_ad": false,
+                    "reason": ""
+                },
+                "recommend_reasons": [
+                    {
+                        "name": "回头客多"
+                    }
+                ],
+                "regular_customer_count": 0,
+                "scheme": "eleme://catering?restaurant_id=1515539",
+                "status": 1,
+                "support_tags": [],
+                "supports": [],
+                "type": 0
+            }
+        },
+        {
+            "restaurant": {
+                "activities": [
+                    {
+                        "attribute": "9.0",
+                        "description": "新用户下单立减9元",
+                        "icon_color": "70bc46",
+                        "icon_name": "首",
+                        "id": 1065248609,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "新用户补贴",
+                        "tips": "新用户下单立减9元",
+                        "type": 103
+                    },
+                    {
+                        "attribute": "{\"25\":{\"1\":3.0, \"0\":0}, \"2\":{\"1\":1.0, \"0\":0}, \"35\":{\"1\":5.0, \"0\":0}, \"12\":{\"1\":2.0, \"0\":0}}",
+                        "description": "满2减1，满12减2，满25减3，满35减5",
+                        "icon_color": "f07373",
+                        "icon_name": "减",
+                        "id": 1078758777,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "自营销复杂满减活动",
+                        "tips": "满2减1，满12减2，满25减3，满35减5",
+                        "type": 102
+                    },
+                    {
+                        "description": "单品定价",
+                        "icon_color": "f1884f",
+                        "icon_name": "特",
+                        "id": 1081256457,
+                        "name": "单品定价",
+                        "tips": "单品定价"
+                    }
+                ],
+                "address": "湖南省郴州市苏仙区王仙岭街道上白水村八组",
+                "authentic_id": 1372940928823242,
+                "description": "",
+                "distance": 865,
+                "favored": false,
+                "flavors": [
+                    {
+                        "id": 221,
+                        "name": "川湘菜"
+                    },
+                    {
+                        "id": 219,
+                        "name": "香锅砂锅"
+                    }
+                ],
+                "float_delivery_fee": 1,
+                "float_minimum_order_amount": 10,
+                "has_story": false,
+                "id": 156139642,
+                "image_path": "50d1fd648dbc461fcee3742a6b40924ajpeg",
+                "is_new": false,
+                "is_premium": false,
+                "is_stock_empty": 0,
+                "is_valid": 1,
+                "latitude": 25.78976,
+                "longitude": 113.104232,
+                "max_applied_quantity_per_order": -1,
+                "name": "猎味花甲",
+                "next_business_time": "",
+                "only_use_poi": false,
+                "opening_hours": [
+                    "10:00/23:00"
+                ],
+                "order_lead_time": 38,
+                "phone": "18773597860 15073521859",
+                "piecewise_agent_fee": {
+                    "description": "配送费¥1",
+                    "extra_fee": 0,
+                    "is_extra": false,
+                    "rules": [
+                        {
+                            "fee": 1,
+                            "price": 10
+                        }
+                    ],
+                    "tips": "配送费¥1"
+                },
+                "platform": 0,
+                "posters": [],
+                "promotion_info": "欢迎光临小店！祝您用餐愉快！",
+                "rating": 4.8,
+                "rating_count": 0,
+                "recent_order_num": 1920,
+                "recommend": {
+                    "is_ad": false,
+                    "reason": ""
+                },
+                "recommend_reasons": [
+                    {
+                        "name": "回头客多"
+                    }
+                ],
+                "regular_customer_count": 0,
+                "scheme": "eleme://catering?restaurant_id=156139642",
+                "status": 1,
+                "support_tags": [],
+                "supports": [],
+                "type": 0
+            }
+        },
+        {
+            "restaurant": {
+                "activities": [
+                    {
+                        "attribute": "9.0",
+                        "description": "新用户下单立减9元",
+                        "icon_color": "70bc46",
+                        "icon_name": "首",
+                        "id": 1065274177,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "新用户补贴",
+                        "tips": "新用户下单立减9元",
+                        "type": 103
+                    },
+                    {
+                        "attribute": "{\"92\":{\"1\":12.0, \"0\":0}, \"52\":{\"1\":8.0, \"0\":0}, \"42\":{\"1\":5.0, \"0\":0}, \"12\":{\"1\":1.0, \"0\":0}, \"22\":{\"1\":3.0, \"0\":0}}",
+                        "description": "满12减1，满22减3，满42减5，满52减8，满92减12",
+                        "icon_color": "f07373",
+                        "icon_name": "减",
+                        "id": 1065029913,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "自营销复杂满减活动",
+                        "tips": "满12减1，满22减3，满42减5，满52减8，满92减12",
+                        "type": 102
+                    },
+                    {
+                        "description": "超值换购",
+                        "icon_color": "f1884f",
+                        "icon_name": "换",
+                        "id": 393759409,
+                        "name": "超值换购",
+                        "tips": "超值换购"
+                    },
+                    {
+                        "description": "单品折扣",
+                        "icon_color": "f07373",
+                        "icon_name": "折",
+                        "id": 1095891810,
+                        "name": "单品折扣",
+                        "tips": "单品折扣"
+                    },
+                    {
+                        "description": "单品折扣",
+                        "icon_color": "f07373",
+                        "icon_name": "折",
+                        "id": 1095891818,
+                        "name": "单品折扣",
+                        "tips": "单品折扣"
+                    },
+                    {
+                        "description": "单品折扣",
+                        "icon_color": "f07373",
+                        "icon_name": "折",
+                        "id": 1095891874,
+                        "name": "单品折扣",
+                        "tips": "单品折扣"
+                    },
+                    {
+                        "description": "单品折扣",
+                        "icon_color": "f07373",
+                        "icon_name": "折",
+                        "id": 1095891850,
+                        "name": "单品折扣",
+                        "tips": "单品折扣"
+                    },
+                    {
+                        "description": "单品折扣",
+                        "icon_color": "f07373",
+                        "icon_name": "折",
+                        "id": 1095891826,
+                        "name": "单品折扣",
+                        "tips": "单品折扣"
+                    },
+                    {
+                        "description": "单品折扣",
+                        "icon_color": "f07373",
+                        "icon_name": "折",
+                        "id": 1095891842,
+                        "name": "单品折扣",
+                        "tips": "单品折扣"
+                    },
+                    {
+                        "description": "单品折扣",
+                        "icon_color": "f07373",
+                        "icon_name": "折",
+                        "id": 1095891834,
+                        "name": "单品折扣",
+                        "tips": "单品折扣"
+                    },
+                    {
+                        "description": "单品折扣",
+                        "icon_color": "f07373",
+                        "icon_name": "折",
+                        "id": 1095891866,
+                        "name": "单品折扣",
+                        "tips": "单品折扣"
+                    },
+                    {
+                        "description": "单品折扣",
+                        "icon_color": "f07373",
+                        "icon_name": "折",
+                        "id": 1095891858,
+                        "name": "单品折扣",
+                        "tips": "单品折扣"
+                    },
+                    {
+                        "description": "下单可返2元代金券",
+                        "icon_color": "ff7239",
+                        "icon_name": "返",
+                        "id": -1,
+                        "name": "下单返代金券",
+                        "tips": "下单可返2元代金券"
+                    }
+                ],
+                "address": "湖南省郴州市苏仙区观山洞街道湘南学院第四食堂",
+                "authentic_id": 3352950946381972,
+                "bidding": "{\"core\":{\"index\":14,\"extraInfo\":\"{\\\"bidding\\\":\\\"{}\\\",\\\"rankId\\\":\\\"ec17e289173743c89950fadea96b457e\\\",\\\"rankTime\\\":\\\"1526551793\\\",\\\"cityId\\\":\\\"178\\\"}\",\"target\":{\"restaurantId\":150118572,\"weight\":30,\"probability\":0.028960000723600388},\"come_from\":0,\"next\":{\"restaurantId\":159234699,\"weight\":30,\"probability\":0.02816000021994114}}}",
+                "description": "本店每份肠粉的米浆均采用纯大米，传统石磨成浆，拒绝各种专用粉，拒绝任何添加剂，真正零添加！每份肠粉均手工制作，现磨现做现吃，保证营养和口感。每种食材包括汤汁均用新鲜和品牌，拒绝冷冻食材、杂牌、添加剂！让你吃的放心，眼见为实！我们将用良心，诚心，真心对待每一份肠粉和每一位顾客！",
+                "distance": 249,
+                "favored": false,
+                "flavors": [
+                    {
+                        "id": 237,
+                        "name": "地方小吃"
+                    },
+                    {
+                        "id": 213,
+                        "name": "米粉面馆"
+                    }
+                ],
+                "float_delivery_fee": 0.5,
+                "float_minimum_order_amount": 9.9,
+                "has_story": false,
+                "id": 150118572,
+                "image_path": "8d3b0b7922f469c045aeb9af66a5fdc7jpeg",
+                "is_new": false,
+                "is_premium": false,
+                "is_stock_empty": 0,
+                "is_valid": 1,
+                "latitude": 25.78503,
+                "longitude": 113.103597,
+                "max_applied_quantity_per_order": -1,
+                "name": "超前石磨肠粉",
+                "next_business_time": "",
+                "only_use_poi": false,
+                "opening_hours": [
+                    "07:55/21:30"
+                ],
+                "order_lead_time": 39,
+                "phone": "18573507033 17375160465",
+                "piecewise_agent_fee": {
+                    "description": "配送费¥0.5",
+                    "extra_fee": 0,
+                    "is_extra": false,
+                    "rules": [
+                        {
+                            "fee": 0.5,
+                            "price": 9.9
+                        }
+                    ],
+                    "tips": "配送费¥0.5"
+                },
+                "platform": 0,
+                "posters": [],
+                "promotion_info": "新品【桂阳手工大米饺】(｡･ω･｡)ﾉ♡【石磨豆花】和【农家铺子】手工肉粽新品美食推荐区上新！当石磨肠粉遇上石磨豆花，从此擦出了爱情火花～ヾ(＾。^*)哈哈老铁们记得右上角点爱心收藏店铺，不会迷路哦～:）老铁们记得右上角点爱心收藏店铺，不会迷路哦～:）",
+                "rating": 4.9,
+                "rating_count": 0,
+                "recent_order_num": 1312,
+                "recommend": {
+                    "image_hash": "731111f3f9379e772eedf4855beae8a1jpeg",
+                    "is_ad": true,
+                    "reason": "广告",
+                    "track": "{\"rankType\":\"8\"}"
+                },
+                "recommend_reasons": [
+                    {
+                        "name": "回头客多"
+                    }
+                ],
+                "regular_customer_count": 0,
+                "scheme": "eleme://catering?restaurant_id=150118572",
+                "status": 1,
+                "support_tags": [],
+                "supports": [],
+                "type": 0
+            }
+        },
+        {
+            "restaurant": {
+                "activities": [
+                    {
+                        "attribute": "{\"40\":{\"1\":4.0, \"0\":0}, \"50\":{\"1\":5.0, \"0\":0}, \"20\":{\"1\":2.0, \"0\":0}, \"30\":{\"1\":3.0, \"0\":0}}",
+                        "description": "满20减2，满30减3，满40减4，满50减5",
+                        "icon_color": "f07373",
+                        "icon_name": "减",
+                        "id": 1116464657,
+                        "is_exclusive_with_food_activity": true,
+                        "name": "自营销复杂满减活动",
+                        "tips": "满20减2，满30减3，满40减4，满50减5",
+                        "type": 102
+                    },
+                    {
+                        "description": "517饿货节-5.17元",
+                        "icon_color": "f1884f",
+                        "icon_name": "特",
+                        "id": 377117233,
+                        "name": "517饿货节-5.17元",
+                        "tips": "517饿货节-5.17元"
+                    }
+                ],
+                "address": "郴州市苏仙区观山洞街道湘南学院",
+                "authentic_id": 4312940942525025,
+                "description": "",
+                "distance": 794,
+                "favored": false,
+                "flavors": [
+                    {
+                        "id": 221,
+                        "name": "川湘菜"
+                    }
+                ],
+                "float_delivery_fee": 0,
+                "float_minimum_order_amount": 0,
+                "has_story": false,
+                "id": 161945125,
+                "image_path": "f86947e4af97f7e0a0ff349dd32785c1jpeg",
+                "is_new": false,
+                "is_premium": false,
+                "is_stock_empty": 0,
+                "is_valid": 1,
+                "latitude": 25.78755,
+                "longitude": 113.106516,
+                "max_applied_quantity_per_order": -1,
+                "name": "大碗饭(新世纪店)",
+                "next_business_time": "",
+                "only_use_poi": false,
+                "opening_hours": [
+                    "09:00/23:00"
+                ],
+                "order_lead_time": 39,
+                "phone": "18573744358",
+                "piecewise_agent_fee": {
+                    "description": "免配送费",
+                    "extra_fee": 0,
+                    "is_extra": false,
+                    "rules": [
+                        {
+                            "fee": 0,
+                            "price": 0
+                        }
+                    ],
+                    "tips": "免配送费"
+                },
+                "platform": 0,
+                "posters": [],
+                "promotion_info": "大碗饭的传统饭菜是不分开的，如要分开请拍餐具，饭菜喜好请备注，在不影响口味的情况下我们尽量满足您的要求，如有什么不满意我们立刻整改，我们很重视每一条不满意的评价，也很珍惜每一条好评，非常感谢每一位顾客，我们不忘初心，使命必达。",
+                "rating": 4.4,
+                "rating_count": 0,
+                "recent_order_num": 2553,
+                "recommend": {
+                    "is_ad": false,
+                    "reason": ""
+                },
+                "recommend_reasons": [],
+                "regular_customer_count": 0,
+                "scheme": "eleme://catering?restaurant_id=161945125",
+                "status": 1,
+                "support_tags": [],
+                "supports": [
+                    {
+                        "description": "该商户食品安全已由中国太平洋保险承保，食品安全有保障",
+                        "icon_color": "999999",
+                        "icon_name": "保",
+                        "id": 7,
+                        "name": "食安保",
+                        "two_characters_icon_name": "保险"
+                    }
+                ],
+                "type": 0
+            }
+        }
+    ],
+    "meta": {
+        "rank_id": "ec17e289173743c89950fadea96b457e"
+    }
+}

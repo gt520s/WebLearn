@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+
+    <div id="box">
+        <input type="texr" v-model="num1">
+        <input type="texr" v-model="num2">
+        <p>{{a+b}}</p>
+    </div>
+
+      <script>
+        let vm = new Vue({
+            el: '#box',
+            data:{
+              a:0,
+              b:0
+            },
+            computed:{
+                num1:{
+                    get(){
+                        return this.a
+                    },
+                    set(newValue){
+                        let n = parseInt(newValue)
+                        if(n<0){
+                            n=0
+                        }
+                        this.a = n;
+                    }
+                },
+                num2:{
+                    get(){
+                        return this.b
+                    },
+                    set(newValue){
+                        let n = parseInt(newValue)
+                        if(n<0){
+                            n=0
+                        }
+                        this.b = n;
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

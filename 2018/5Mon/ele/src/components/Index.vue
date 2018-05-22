@@ -155,8 +155,7 @@
   推荐商家
 </div>
 <section class="shoplist">
-  <ItemList/>
-
+  <ItemList v-for="data in arr.items" v-bind:key="data.restaurant.activities.id" :data="data"></ItemList>
 </section>
 <div class="spinner" style="display: none;"></div>
 <!---->
@@ -225,13 +224,19 @@
 
 <script>
 import ItemList from '@/components/list-item'
+import Data from '@/assets/data.json'
 export default {
   name: 'Index',
   data () {
     return {
+      arr: []
     }
   },
-  components: { ItemList }
+  components: { ItemList },
+  mounted () {
+    this.arr = Data
+    console.log(Data)
+  }
 }
 </script>
 
