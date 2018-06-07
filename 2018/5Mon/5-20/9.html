@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="vue.js"></script>
+    <script src="vue-router.min.js"></script>
+</head>
+<body>
+    <div id="box">
+        <router-link :to="{name:'use'}">命名路由</router-link>
+        <router-view></router-view>
+    </div>
+    <script>
+        let r1 = new VueRouter({
+            routes:[
+                {
+                    path: '/user',
+                    name: 'use',
+                    component: {
+                        template: `<div>
+                            命名路由棒棒哒~
+                        </div>`
+                    }
+                }
+            ]
+        });
+
+        let vm = new Vue({
+            el: '#box',
+            router:r1
+        })
+    </script>
+</body>
+</html>

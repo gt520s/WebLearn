@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="vue.js"></script>
+    <script src="vue-router.min.js"></script>
+</head>
+<body>
+    <div id="box">
+        <router-link :to="{name:'use'}">单路由,多视图~</router-link>
+        <router-view></router-view>
+        <router-view name="a"></router-view>
+        <router-view name="b"></router-view>
+    </div>
+    <script>
+        let r1 = new VueRouter({
+            routes:[
+                {
+                    path: '/user',
+                    components: {
+                        default: {
+                             template: "<div>默认视图</div>"
+                        },
+                       a: {
+                        template: "<div>a视图</div>"
+                       },
+                       b: {
+                        template: "<div>b视图</div>"
+                       }
+                    }
+                }
+            ]
+        });
+
+        let vm = new Vue({
+            el: '#box',
+            router:r1
+        })
+    </script>
+</body>
+</html>
