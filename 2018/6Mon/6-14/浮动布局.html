@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>浮动布局</title>
+    <style type="text/css" media="screen">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box-float div{
+            height: 300px;
+        }
+        .box-float{
+            min-height: 300px;
+        }
+        .box-float .left{
+            float: left;
+            width: 300px;
+            background: blue;
+        }
+        .box-float .center{
+            background:yellow;
+        }
+        .box-float .right{
+            float: right;
+            width: 300px;
+            background:red;
+        }
+
+        .box-absoult{
+            min-height: 300px;
+            position: relative;
+        }
+        .box-absoult div{height: 300px;}
+        .box-absoult .left{
+            width: 300px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background:green;
+        }
+        .box-absoult .content{
+            position: absolute;
+            left: 300px;
+            top: 0;
+            background:red;
+            width: 100%;
+        }
+        .box-absoult .right{
+            position: absolute;
+            right: 0;
+            top: 0;
+            background:blue;
+            width: 300px;
+        }
+        .box-flex{
+            display: flex;
+            min-height: 300px;
+        }
+        .box-flex div{
+            height: 300px;
+        }
+        .box-flex .left{
+            width: 300px;
+            background:gray;
+        }
+        .box-flex .content{
+            flex: 1;
+            background:#ccc;
+        }
+        .box-flex .right{
+            width: 300px;
+            background:yellow;
+        }
+
+        .box-table{
+            display: table;
+            min-height: 300px;
+            width: 100%;
+        }
+        .box-table>div{
+            height: 300px;
+            display: table-cell;
+        }
+        .box-table .left{
+            width: 300px;
+            background:red;
+        }
+        .box-table .content{
+            background:#782332;
+        }
+        .box-table .right{
+            width: 300px;
+            background:orange;
+        }
+        .box-grid{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 300px auto 300px;
+            grid-template-rows:100px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="box-float">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="center">
+            <h1>float布局</h1>
+        </div></section>
+    <section class="box-absoult">
+        <div class="left"></div>
+        <div class="content">
+            <h1>absolute布局</h1>
+        </div>
+        <div class="right"></div></section>
+    <section class="box-flex">
+        <div class="left"></div>
+        <div class="content">
+            <h1>flex布局</h1>
+        </div>
+        <div class="right"></div>            </section>
+    <section class="box-table">
+        <div class="left"></div>
+        <div class="content">
+            <h1>table布局</h1>
+        </div>
+        <div class="right"></div>        
+    </section>
+    <section class="box-grid">
+        <div class="left"></div>
+        <div class="content">
+            <h1>这是网格布局!</h1>
+        </div>
+        <div class="right" id="right"></div>
+    </section>
+    <script>
+        window.onload = () => {
+            let boxGridRight = document.getElementById('right')
+            let oW = window.getComputedStyle(boxGridRight).height
+            alert(oW)
+        }
+    </script>
+</body>
+</html>

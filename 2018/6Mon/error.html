@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    window.onerror = function (msg, url, line) {
+      
+      return false
+    }
+
+    function Person(na){
+      this.name = na;
+    }
+    let de = [32,34];
+    let o = {a:34};
+    let reg = /\d+/;
+    let p1 = new Person('jason');
+    console.log(Object.prototype.toString.call(de))
+    console.log(skkd)
+    console.log(Object.prototype.toString.call(reg))
+    Object.prototype.toString.call(val)
+
+    function Person (name) {
+      if(this instanceof Person) { //检查this对象是Person的一个实例
+        this.name = name;
+      } else {
+        return new Person (name)
+      }
+    }
+  </script>
+</body>
+</html>

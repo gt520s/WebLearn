@@ -17,7 +17,7 @@
                <img :src="food.icon" width="57" height="57" alt="">
              </div>
               <div class="content">
-                <h3 class="name">{{food.name}}</h3>
+                <h3 class="name" @click="selecteFood(food, $event)">{{food.name}}</h3>
                 <p class="desc">{{food.description}}</p>
                 <div class="extra">
                   <span class="count">月售{{food.sellCount}}份</span>
@@ -37,6 +37,7 @@
       </ul>
     </div>
     <shopCart :selectFoods="selectFood" :deliveryPrice="seller.deliveryPrice" :minPrice="seller.minPrice"></shopCart>
+    <food :food="selectedFood" ref="food"></food>
   </div>
 </template>
 
@@ -45,6 +46,7 @@ import axios from 'axios'
 import BScroll from 'better-scroll'
 import shopCart from '@/components/shopCart/shopCart'
 import cartControl from '@/components/cartcontrol/cartcontrol'
+import food from '@/components/food/food'
 // const ERR_OK = 0
 export default {
   props: {
@@ -56,7 +58,8 @@ export default {
     return {
       goods: [],
       listHeight: [],
-      scrollY: 0
+      scrollY: 0,
+      selectedFood: {}
     }
   },
   created () {
@@ -71,13 +74,11 @@ export default {
     //   }
     // })
     axios.get('https://www.easy-mock.com/mock/5b13c7edc5450f078273c580/example/datas').then((response) => {
-      console.log(this)
       this.goods = response.data.goods
       this.$nextTick(() => {
         this.initScroll()
         this.calculateHeight()
       })
-      console.log(this.goods)
     })
     this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee']
   },
@@ -106,6 +107,10 @@ export default {
     }
   },
   methods: {
+    selecteFood (food, event) {
+      this.selectedFood = food
+      this.$refs.food.show()
+    },
     initScroll () {
       this.menuScroll = new BScroll(this.$refs.menuWarp, {
         click: true
@@ -134,7 +139,7 @@ export default {
       this.foodScroll.scrollToElement(el, 300)
     }
   },
-  components: {shopCart, cartControl}
+  components: {shopCart, cartControl, food}
 }
 </script>
 
@@ -245,4 +250,5 @@ export default {
             position:absolute
             right:0
             bottom:5px
+
 </style>

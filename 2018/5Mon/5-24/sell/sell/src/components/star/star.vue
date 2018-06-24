@@ -25,7 +25,7 @@ export default {
     itemClasses () {
       let res = []
       let score = Math.floor(this.score * 2) / 2
-      let hasDecimal = score % 1 === 0
+      let hasDecimal = score % 2 === 0
       let integer = Math.floor(score)
       for (let i = 0; i < integer; i++) {
         res.push(CLS_ON)

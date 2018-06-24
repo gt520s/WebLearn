@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  .box{
+    width: 100%;
+    background: blue;
+  }
+</style>
+</head>
+<body>
+  <div class="box"></div>
+  <script>
+    function throttle (method, context) {
+      clearTimeout(method.tid);
+      method.tid = setTimeout(function(){
+        method.call(context)
+      },100)
+    }
+    function change(){
+     var box = document.querySelector('.box');
+     box.style.height = box.offsetWidth + 'px';
+   }
+   window.onresize = function(){
+    throttle(change)
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">哈哈</button>
+    <script>
+        window.onload = () => {
+            let event = new Event('bigPag');
+            let oBtn = document.getElementById('btn');
+            oBtn.addEventListener('bigPag', () => {
+                console.log('这是自定义事件');
+            },false);
+            oBtn.addEventListener('click', () => {
+                oBtn.dispatchEvent(event);
+            },false)
+        }
+    </script>
+</body>
+</html>

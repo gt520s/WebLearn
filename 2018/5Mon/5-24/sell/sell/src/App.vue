@@ -17,7 +17,8 @@ import header from './components/header/header'
 export default {
   data () {
     return {
-      seller: {}
+      seller: {},
+      allData: {}
     }
   },
   created () {
@@ -28,9 +29,8 @@ export default {
         }
      })*/
     axios.get('https://www.easy-mock.com/mock/5b13c7edc5450f078273c580/example/datas').then((response) => {
-      console.log(this)
+      this.allData = response.data
       this.seller = response.data.seller
-      console.log(this.seller)
     })
   },
   components: { v_header: header },

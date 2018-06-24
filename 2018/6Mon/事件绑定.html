@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <button class="btn">BTN</button>
+  <script>
+    var EventUtil={
+      addHandler:function(element,type,handler){ //添加事件
+        if(element.addEventListener){ 
+         element.addEventListener(type,handler,false);  //使用DOM2级方法添加事件
+      }else if(element.attachEvent){                    //使用IE方法添加事件
+       element.attachEvent("on"+type,handler);
+     }else{
+         element["on"+type]=handler;          //使用DOM0级方法添加事件
+       }
+     }
+   }
+   var handler = {
+    msg: 'this is a message!',
+    handlerClick: function (){
+      console.log(this.msg)
+      console.log(this)
+    }
+  }
+  var btn = document.querySelectorAll('.btn')[0];
+  EventUtil.addHandler(btn, 'click', handler.handlerClick.bind(handler))
+
+  Object.preventExtensions(handler);
+  handler.age = 20;
+  console.log(handler.age)
+</script>
+</body>
+</html>
