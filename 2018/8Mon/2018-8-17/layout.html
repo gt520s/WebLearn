@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>css布局</title>
+<style>
+    *{margin:0;padding: 0;}
+    .box{width: 100%;display: table;height: 100%;}
+    .box div{}
+    .top{width: 100%;height:300px;background: skyblue;display: table-row;}
+    .buttom{width: 100%;height:300px;background: green;display: table-row;}
+    .content{width: 100%;background: #ccc;display: table-row;}
+
+</style>
+</head>
+<body>
+    <div class="box">
+        <div class="top">头部</div>
+        <div class="content">
+            <h2>table布局</h2>
+        </div>
+        <div class="buttom">底部</div>
+    </div>
+</body>
+</html>

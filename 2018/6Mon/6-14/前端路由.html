@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://cdn.bootcss.com/Buttons/2.0.0/css/buttons.css" rel="stylesheet">
+	<style>
+		li {
+		  display: inline-block;
+		  margin: 0 30px 30px 0;
+			}
+	</style>
+</head>
+<body>
+	<ul> 
+        <li><a href="#/" class="button button-glow button-border button-rounded button-primary">turn white</a></li> 
+        <li><a href="#/orange" class="button button-glow button-rounded button-highlight">turn orange</a></li> 
+        <li><a href="#/purple" class="button button-glow button-rounded button-royal">turn purple</a></li> 
+    </ul> 
+
+
+    <script>
+    	function Route(){
+    		this.routes = {};
+    		this.currentUrl = '';
+    	}
+    	fn = Route.prototype;
+    	fn.route = function(path, callback){
+    		this.routes[path] = callback || function(){};
+    	}
+    	fn.refresh = function () {
+    		this.currentUrl = location.hash.slice(1) || '/';
+    		this.routes[this.currentUrl]();
+    	}
+    	fn.init = function() {//绑定事件
+    		window.addEventListener('load', this.refresh.bind(this), false)
+    		window.addEventListener('hashchange', this.refresh.bind(this), false)
+    	};
+
+    	var Router = new Route();
+    	Router.init();
+    	var body = document.querySelector('body');
+    	function changeColor(color) {
+    		body.style.background = color;
+    	}
+
+    	Router.route('/', () => {
+    		changeColor('green')
+    	});
+			Router.route('/orange', () => {
+			    		changeColor('orange')
+			    	});
+			Router.route('/purple', () => {
+			    		changeColor('purple')
+			    	});
+    </script>
+</body>
+</html>

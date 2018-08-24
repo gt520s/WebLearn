@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>new API</title>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        border: 1px solid #000;
+    }
+    .child{
+        width: 50px;
+        height: 50px;
+        margin: 20px;
+        background: #EEE;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <div class="child"></div>
+    </div>
+    <script>
+        var arr = [12,15,121,21,25,12,58,12,6,584,16,6,484,1,151,1,6]
+        var result = [];
+        var len = arr.length;
+        for(var i=0;i<len;i++){
+            if(result.indexOf(arr[i]) === -1){
+                result.push(arr[i])
+            }
+        }
+        console.log(result)
+
+    </script>
+</body>
+</html>

@@ -61,6 +61,7 @@ export default {
   created () {
     axios.get('https://www.easy-mock.com/mock/5b13c7edc5450f078273c580/example/datas').then((response) => {
       this.ratings_change = this.ratings = response.data.ratings
+      console.log(response)
       this.$nextTick(() => {
         if (!this.scroll) {
           this.scroll = new BScroll(this.$refs.ratings, {

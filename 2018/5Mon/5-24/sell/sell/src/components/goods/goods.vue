@@ -78,6 +78,7 @@ export default {
       this.$nextTick(() => {
         this.initScroll()
         this.calculateHeight()
+        console.log(response)
       })
     })
     this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee']

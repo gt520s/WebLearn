@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>自定义事件</title>
+    <style media="screen">
+      .box{
+        width: 200px;
+        height: 200px;
+        background: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <script type="text/javascript">
+      var dom = document.querySelector('.box');
+      window.addEventListener('click', () => {console.log('window被触发!'), true})
+      document.documentElement.addEventListener('click', () => {console.log('html被触发!')}, true)
+      document.body.addEventListener('click', () => {console.log('body触发')}, true)
+      dom.addEventListener('click', () => {console.log('dom元素被触发'), true})
+      document.addEventListener('click', () => {console.log('documne被触发!')}, true)
+
+      var ev = new Event('jason');
+      dom.addEventListener('jason', () => {console.log('自定义事件!')})
+      dom.dispatchEvent(ev)
+    </script>
+  </body>
+</html>
