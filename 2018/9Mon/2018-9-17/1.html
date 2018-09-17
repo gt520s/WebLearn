@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+</head>
+<body>
+
+    <script>
+      let obj = {
+        name:'jason',
+        age:'23'
+      };
+      observe(obj);
+      obj.name = 'ds';
+      obj.age = '18';
+
+
+      function observe(obj){
+        if(!obj || typeof obj !== 'object'){
+          return
+        }
+        //取出所有属性遍历
+        Object.keys(obj).forEach(function(key){
+          defineReactive(obj,key,obj[key])
+        })
+      }
+      function defineReactive(obj,key,val){
+        observe(val);//监听子属性
+        Object.defineProperty(obj,key,{
+          enumerable:true,
+          configurable:false,
+          get(){
+            return val
+          },
+          set(newVal){
+            console.log(`监听到值得变化了  ${val}==>${newVal}`);
+
+          }
+        })
+      }
+
+    </script>
+
+</body>
+</html>
